@@ -1,0 +1,53 @@
+@use 'lib' as *;
+
+.rose-button {
+	$self: &;
+
+	padding: 26px;
+	border-radius: 40px;
+	background: var(--rose);
+	color: var(--white);
+	font-size: 21px;
+	font-weight: 700;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 400px;
+	max-width: 100%;
+	transition: background var(--trans);
+
+	&__content {
+		display: grid;
+		align-items: center;
+		justify-content: center;
+		grid-template-columns: max-content 1fr;
+		gap: 16px;
+		transition: color var(--trans);
+		text-wrap: nowrap;
+		transition: all var(--trans);
+
+		img {
+			width: 60px;
+			object-fit: contain;
+		}
+
+		span {
+			overflow: hidden;
+			transition: all var(--trans);
+		}
+	}
+
+	&:hover {
+		background: var(--dark);
+	}
+
+	&:hover &__content {
+		gap: 0;
+		grid-template-columns: max-content 0fr;
+
+		span {
+			opacity: 0;
+		}
+	}
+}

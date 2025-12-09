@@ -1,0 +1,57 @@
+@use 'lib' as *;
+
+.news {
+	$self: &;
+
+	padding-top: fluid(70px, 60px);
+	padding-bottom: fluid(125px, 75px);
+
+	&__container {
+		width: min(1184px, calc(100% - 50px * 2));
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	&__title {
+		font-size: fluid(55px, 30px);
+		font-weight: 500;
+		text-align: center;
+		margin-bottom: fluid(60px, 50px);
+	}
+
+	&__cards {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 45px 15px;
+		width: 100%;
+
+		@include media("<=lg") {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include media("<=xs") {
+			grid-template-columns: 100%;
+		}
+	}
+
+	&__card:hover &__card-title {
+		opacity: 0.7;
+	}
+
+	&__card-image {
+		width: 100%;
+		object-fit: cover;
+		border-radius: 10px;
+		height: fluid(260px, 220px);
+		margin-bottom: 25px;
+	}
+
+	&__card-title {
+		font-size: fluid(21px, 15px);
+		font-weight: 700;
+		transition: all var(--trans);
+	}
+
+}

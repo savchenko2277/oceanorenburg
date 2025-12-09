@@ -1,0 +1,163 @@
+@use 'lib' as *;
+
+.ocean {
+	$self: &;
+
+	padding-bottom: fluid(115px, 75px);
+	
+	@include media("<=lg") {
+		overflow: hidden;
+	}
+
+	&__container {
+		display: grid;
+		grid-template-columns: minmax(auto, 721px) 533px;
+		justify-content: space-between;
+		width: min(1478px, calc(100% - 50px * 2));
+		margin: 0 auto;
+		gap: 80px;
+
+		@media (max-width: 400px) {
+			width: min(1478px, calc(100% - 16px * 2));
+		}
+
+		@include media("<=lg") {
+			grid-template-columns: 100%;
+		}
+	}
+
+	&__about {
+		display: flex;
+		flex-direction: column;
+		padding-top: fluid(150px, 110px);
+		position: relative;
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: fluid(55px, 30px);
+		margin-bottom: fluid(35px, 24px);
+		max-width: fluid(455px, 145px);
+	}
+
+	&__text {
+		font-size: fluid(21px, 15px);
+		font-weight: 400;
+		margin-bottom: fluid(82px, 46px);
+
+		b {
+			font-weight: 700;
+		}
+	}
+
+	&__button {
+		@include flex-center;
+		font-size: fluid(18px, 14px);
+		font-weight: 700;
+		color: var(--middle);
+		padding: 20px;
+		border-radius: 30px;
+		border: 1px solid var(--middle);
+		max-width: fluid(300px, 220px);
+		transition: all var(--trans);
+
+		&:hover {
+			background-color: var(--middle);
+			color: var(--white);
+		}
+	}
+
+	&__promo {
+		@include flex-center;
+		flex-direction: column;
+		border-radius: 100%;
+		background: radial-gradient(65.95% 65.95% at 65.48% 34.05%, #FFFFFF 0%, #AEDFE6 100%);
+		aspect-ratio: 1 / 1;
+		padding: fluid(70px, 35px) 50px;
+		transform: translateY(-35px);
+		position: relative;
+
+		@include media("<=lg") {
+			transform: none;
+		}
+	}
+
+	&__promo-title {
+		text-align: center;
+		font-size: fluid(36px, 22px);
+		max-width: 340px;
+		font-weight: 500;
+		margin-bottom: 45px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		b {
+			display: block;
+			padding: 5px;
+			border-radius: 6px;
+			color: var(--white);
+			background: var(--dark);
+			font-weight: 700;
+			margin-top: 6px;
+			transform: rotate(-2deg);
+			width: fit-content;
+			
+		}
+	}
+
+	&__promo-btn.rose-button {
+		margin-bottom: 24px;
+		max-width: 360px;
+
+		@include media("<=xs") {
+			padding: 16px 0px;
+			max-width: 200px;
+			font-size: 15px;
+
+			img {
+				width: 40px;
+			}
+		}
+	}
+
+	&__promo-desc {
+		max-width: 214px;
+		text-align: center;
+		font-size: fluid(16px, 12px);
+	}
+
+	&__meduza {
+		position: absolute;
+		width: fluid(400px, 200px);
+		left: 60%; top: -30%;
+
+		@include media("<=xs") {
+			top: 10%;
+			left: 75%;
+		}
+	}
+
+	&__fish {
+		position: absolute;
+		width: fluid(360px, 150px);
+		top: 80%;
+		right: 90%;
+
+		@include media("<=lg") {
+			top: -10%; right: -10%;
+		}
+	}
+
+	&__water {
+		position: absolute;
+		height: fluid(110px, 45px);
+		top: 55%;
+		right: 110%;
+
+		@include media("<=lg") {
+			top: -25%; right: 0%;
+		}
+	}
+
+}

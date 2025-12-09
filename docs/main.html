@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css?v=1765322834175">
+    <link rel="stylesheet" href="css/swiper.css?v=1765322834175">
+    <title>ОРЕНБУРГСКИЙ ОКЕАНАРИУМ</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d41a53f1-28a6-4072-b94a-46f4fbb1874c&lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+		ymaps.ready(init);
+		function init() {
+			var myMap = new ymaps.Map(document.getElementById('map'), {
+				center: [55.76, 37.64],
+				zoom: 7
+			});
+		}
+	</script>
+</head>
+<body>
+<header class="header">
+    <div class="header__container container">
+        <div class="header__menu">
+            <ul class="header__list">
+                <li class="header__list-item"><a href="#">Главная</a></li>
+                <li class="header__list-item"><a href="#">Экспозиция</a></li>
+                <li class="header__list-item"><a href="#">Посетителям</a></li>
+                <li class="header__list-item"><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <a href="#" class="header__logo">
+            <img loading="lazy" src="./img/logo.svg" alt="">
+        </a>
+        <div class="header__side">
+            <a href="#" class="header__tel">
+                <svg><use xlink:href="#phone"></use></svg>
+                +7&#160;(90)&#160;01-23-45-67
+            </a>
+            <a href="#" class="header__location">
+                <div class="header__location-top">
+                    <svg><use xlink:href="#marker"></use></svg>
+                    Оренбург, Шарлыкское шоссе, &#189;
+                </div>
+                <b>Ежедневно с&#160;10 до&#160;21</b>
+            </a>
+            <button type="button" class="header__btn">КУПИТЬ БИЛЕТ</button>
+            <button class="header__burger">
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <section data-parallax class="promo">
+        <div class="promo__container">
+            <h1 class="promo__title">СКОРО <br> ОТКРЫТИЕ</h1>
+            <div class="promo__text">
+                <p>
+                    <b>Крупнейший в&#160;ПФО океанариум с&#160;более чем 3000 видами</b> морских обитателей и&#160;животных
+                </p>
+            </div>
+            <a href="#" class="promo__button rose-button">
+                <div class="rose-button__content">
+                    <img loading="lazy" src="./img/acula.svg" alt="">
+                    <span>КУПИТЬ БИЛЕТ</span>
+                </div>
+            </a>
+        </div>
+        <div class="promo__bg swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img data-parallax-item="10, 0.02" loading="lazy" src="./img/promo/1.webp" alt=""
+                        class="swiper-slide">
+                </div>
+                <div class="swiper-slide">
+                    <img data-parallax-item="10, 0.02" loading="lazy" src="./img/promo/2.webp" alt=""
+                        class="swiper-slide">
+                </div>
+                <div class="swiper-slide">
+                    <img data-parallax-item="10, 0.02" loading="lazy" src="./img/promo/3.webp" alt=""
+                        class="swiper-slide">
+                </div>
+                <div class="swiper-slide">
+                    <img data-parallax-item="10, 0.02" loading="lazy" src="./img/promo/4.webp" alt=""
+                        class="swiper-slide">
+                </div>
+                <div class="swiper-slide">
+                    <img data-parallax-item="10, 0.02" loading="lazy" src="./img/promo/5.webp" alt=""
+                        class="swiper-slide">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section data-parallax class="ocean">
+        <div class="ocean__container">
+            <div class="ocean__about">
+                <h2 class="ocean__title title">ОКЕАН В&#160;ГОРОДЕ</h2>
+                <div class="ocean__text">
+                    <p>
+                        <b>Единственный на&#160;Южном Урале и&#160;крупнейший в&#160;ПФО океанариум</b>&#160;&#8212; место, где вы&#160;познакомитесь с
+                        морскими и&#160;пресноводными жителями самых разных уголков планеты. <b>В&#160;наших аквариумах воссоздана
+                            естественная среда обитания</b>, а&#160;наши экскурсоводы расскажут
+                        о&#160;жизни наших обитателей.
+                    </p>
+                </div>
+                <a href="#" class="ocean__button">
+                    Обитатели океанариума
+                </a>
+                <img data-parallax-item="10, 0.01" loading="lazy" src="./img/decor/meduza-1.webp" alt=""
+                    class="ocean__meduza">
+            </div>
+            <div class="ocean__promo">
+                <h4 class="ocean__promo-title">
+                    ПОСЕТИТЕ
+                    ОКЕАНАРИУМ
+                    В&#160;ДЕНЬ ОТКРЫТИЯ
+                    <b>СО&#160;СКИДКОЙ 50%!</b>
+                </h4>
+                <a href="#" class="ocean__promo-btn rose-button">
+                    <div class="rose-button__content">
+                        <img loading="lazy" src="./img/acula.svg" alt="">
+                        <span>КУПИТЬ БИЛЕТ</span>
+                    </div>
+                </a>
+                <p class="ocean__promo-desc">
+                    Открытие океанариума
+                    во&#160;2 квартале 2026 года
+                </p>
+                <img data-parallax-item="-10, 0.01" loading="lazy" src="./img/decor/fish-2.webp" alt=""
+                    class="ocean__fish">
+                <img data-parallax-item="10, 0.05" loading="lazy" src="./img/decor/water.webp" alt=""
+                    class="ocean__water">
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="services__container">
+            <h2 class="services__title title">Наши услуги и&#160;экспозиции</h2>
+            <div class="services__cards">
+                <div class="services-card">
+                    <div class="services-card__icon">
+                        <img loading="lazy" src="./img/icons/1.svg" alt="">
+                    </div>
+                    <div class="services-card__main">
+                        <h4 class="services-card__title">Экспозиция океанариума</h4>
+                        <img src="./img/services/1.webp" alt="" class="services-card__image">
+                    </div>
+                    <div class="services-card__bottom">
+                        <div class="services-card__content">
+                            <p>
+                                <b>Более 2500&#160;м&#178; пространства с&#160;морскими жителями</b> из&#160;разных стран и&#160;континентов.
+                            </p>
+                        </div>
+                        <a href="#" class="services-card__btn rose-button">
+                            <div class="rose-button__content">
+                                <img loading="lazy" src="./img/acula.svg" alt="">
+                                <span>КУПИТЬ БИЛЕТ</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="services-card">
+                    <div class="services-card__icon">
+                        <img loading="lazy" src="./img/icons/2.svg" alt="">
+                    </div>
+                    <div class="services-card__main">
+                        <h4 class="services-card__title">Кормление рыб и&#160;животных</h4>
+                        <img src="./img/services/2.webp" alt="" class="services-card__image">
+                    </div>
+                    <div class="services-card__bottom">
+                        <div class="services-card__content">
+                            <p>
+                                Уникальная возможность увидеть, <b>как&#160;мы&#160;кормим и&#160;заботимся о&#160;об&#160;наших обитателях</b>
+                            </p>
+                        </div>
+                        <a href="#" class="services-card__btn rose-button">
+                            <div class="rose-button__content">
+                                <img loading="lazy" src="./img/acula.svg" alt="">
+                                <span>КУПИТЬ БИЛЕТ</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="services-card">
+                    <div class="services-card__icon">
+                        <img loading="lazy" src="./img/icons/3.svg" alt="">
+                    </div>
+                    <div class="services-card__main">
+                        <h4 class="services-card__title">Экскурсии</h4>
+                        <img src="./img/services/3.webp" alt="" class="services-card__image">
+                    </div>
+                    <div class="services-card__bottom">
+                        <div class="services-card__content">
+                            <p>
+                                <b>Интересные и&#160;познавательные экскурсии:</b> индивидуальные и&#160;для&#160;групп до&#160;20 человек
+                            </p>
+                        </div>
+                        <a href="#" class="services-card__btn rose-button">
+                            <div class="rose-button__content">
+                                <img loading="lazy" src="./img/acula.svg" alt="">
+                                <span>КУПИТЬ БИЛЕТ</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services__bg">
+            <img loading="lazy" src="./img/services-bg.webp" alt="">
+        </div>
+    </section>
+    <section class="news">
+        <div class="news__container">
+            <h2 class="news__title title">Наши новости</h2>
+            <div class="news__cards">
+                <a href="#" class="news__card">
+                    <img loading="lazy" src="./img/news/1.webp" alt="" class="news__card-image">
+                    <h4 class="news__card-title">Изменение режима работы океанариума в&#160;сентябре</h4>
+                </a>
+                <a href="#" class="news__card">
+                    <img loading="lazy" src="./img/news/2.webp" alt="" class="news__card-image">
+                    <h4 class="news__card-title">Изменение режима работы океанариума в&#160;сентябре</h4>
+                </a>
+                <a href="#" class="news__card">
+                    <img loading="lazy" src="./img/news/3.webp" alt="" class="news__card-image">
+                    <h4 class="news__card-title">Изменение режима работы океанариума в&#160;сентябре</h4>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section data-parallax class="reviews">
+        <img data-parallax-item="-10, 0.01" loading="lazy" src="./img/decor/fish-4.webp" alt="" class="reviews__fish">
+        <div class="reviews__body">
+            <div class="reviews__container">
+                <div class="reviews__top">
+                    <h2 class="reviews__title">Отзывы гостей океанариума</h2>
+                    <div class="reviews__nav">
+                        <button type="button" class="reviews__nav-btn reviews__nav-btn_prev">
+                            <img loading="lazy" src="./img/icons/arrow-left.svg" alt="">
+                        </button>
+                        <button type="button" class="reviews__nav-btn reviews__nav-btn_next">
+                            <img loading="lazy" src="./img/icons/arrow-right.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="reviews__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="reviews-card swiper-slide">
+                            <div class="reviews-card__top">
+                                <div class="reviews-card__photo"></div>
+                                <div class="reviews-card__user">
+                                    <p class="reviews-card__name">Анна З.</p>
+                                    <div class="reviews-card__stars">
+                                        <svg fill="#C39708">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg fill="#C39708">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg fill="#C39708">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg fill="#C39708">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg fill="#C39708">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-card__content">
+                                <p>
+                                    Очень понравилось в&#160;океанариуме, обитатели проявляют интерес к&#160;посетителям, все
+                                    ухоженные, не&#160;пугливые&#160;&#8212; видно, что с&#160;ними хорошо обращаются. Пингвины и&#160;тюлень едят
+                                    с
+                                    рук кипера, проявляют дружелюбие к&#160;нему. Персонал доброжелательный, есть большой
+                                    отдел с
+                                    атрибутикой (игрушки отличного качества и&#160;дизайна в&#160;виде разных животных, сувениры),
+                                    за
+                                    символическую плату можно купить корм для&#160;лебедей, черепах и&#160;карпов&#160;кои. Очень
+                                    красивые
+                                    помещения, все сделано для&#160;комфорта животных, даже климатические условия и&#160;состав
+                                    воды.
+                                    А&#160;еще можно пощекотать себе нервы и&#160;залезть в&#160;стеклянный короб в&#160;зоне проживания
+                                    крокодилов!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="reviews-card swiper-slide">
+                            <div class="reviews-card__top">
+                                <div class="reviews-card__photo"></div>
+                                <div class="reviews-card__user">
+                                    <p class="reviews-card__name">Елена А.</p>
+                                    <div class="reviews-card__stars">
+                                        <svg fill="#C39708">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg fill="#C39708">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg fill="#C39708">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg fill="#C39708">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg fill="#C39708">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-card__content">
+                                <p>
+                                    Небольшой океанариум. Есть разные виды рыб, пингвины, выдры, крокодилы, черепахи.
+                                    Расположен в&#160;торговом комплексе, это один из&#160;плюсов в&#160;виде парковки, фуд зоны и
+                                    возможности совместить с&#160;шопингом. При&#160;океанариуме свой гардероб. Первыми при&#160;входе
+                                    встречают пингвины, попали на&#160;кормление, дети были в&#160;восторге. В&#160;принципе все здесь
+                                    ориентировано для&#160;детей. В&#160;особенности лабиринт под&#160;вольером с&#160;крокодила и, со
+                                    смотровыми. Несколько фото&#160;зон. Есть магазин с&#160;сувенирами и&#160;кормом, можно покормить
+                                    рыбок в&#160;открытом бассейне и&#160;лебедей. К&#160;посещению посоветую.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="reviews-card swiper-slide">
+                            <div class="reviews-card__top">
+                                <div class="reviews-card__photo"></div>
+                                <div class="reviews-card__user">
+                                    <p class="reviews-card__name">Светлана Т.</p>
+                                    <div class="reviews-card__stars">
+                                        <svg fill="#C39708">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg fill="#C39708">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg fill="#C39708">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg fill="#C39708">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg fill="#C39708">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-card__content">
+                                <p>
+                                    Восторг! Не&#160;могли уйти часа&#160;три. Пингвины. Их&#160;как&#160;будто учили позировать для
+                                    фотографа!
+                                    Выдры вызывают массу эмоций. Как&#160;они разговаривают, позируют, плавают, кувыркаются в
+                                    воде, играют как&#160;котята! Невозможно оторваться. Красивые лебеди, готовы есть прямо
+                                    из
+                                    ваших&#160;рук. Акулы над вашей головой. Да&#160;они небольшие, и&#160;хорошо, не&#160;так страшно.
+                                    Крокодилы очень ленивые. Если&#160;пробраться в&#160;стеклянные трубы, то&#160;лицом к&#160;их&#160;пасти
+                                    совсем
+                                    не&#160;страшно! Масса интересных локаций! Водопад, мостики, стеклянный пол над водоемом
+                                    с
+                                    рыбками. Очень много разных рыб, черепах. Детей порадует тематический отдел мягких
+                                    игрушек!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="reviews-card swiper-slide">
+                            <div class="reviews-card__top">
+                                <div class="reviews-card__photo"></div>
+                                <div class="reviews-card__user">
+                                    <p class="reviews-card__name">Светлана Т.</p>
+                                    <div class="reviews-card__stars">
+                                        <svg fill="#C39708">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg fill="#C39708">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg fill="#C39708">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg fill="#C39708">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        <svg fill="#C39708">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-card__content">
+                                <p>
+                                    Восторг! Не&#160;могли уйти часа&#160;три. Пингвины. Их&#160;как&#160;будто учили позировать для
+                                    фотографа!
+                                    Выдры вызывают массу эмоций. Как&#160;они разговаривают, позируют, плавают, кувыркаются в
+                                    воде, играют как&#160;котята! Невозможно оторваться. Красивые лебеди, готовы есть прямо
+                                    из
+                                    ваших&#160;рук. Акулы над вашей головой. Да&#160;они небольшие, и&#160;хорошо, не&#160;так страшно.
+                                    Крокодилы очень ленивые. Если&#160;пробраться в&#160;стеклянные трубы, то&#160;лицом к&#160;их&#160;пасти
+                                    совсем
+                                    не&#160;страшно! Масса интересных локаций! Водопад, мостики, стеклянный пол над водоемом
+                                    с
+                                    рыбками. Очень много разных рыб, черепах. Детей порадует тематический отдел мягких
+                                    игрушек!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section data-parallax class="answers">
+        <div class="answers__container">
+            <img data-parallax-item="-10, 0.01" loading="lazy" src="./img/decor/fish-3.webp" alt=""
+                class="answers__fish">
+            <h2 class="answers__title">FAQ</h2>
+            <div class="answers__columns">
+                <div class="answers__column">
+                    <div data-click-section class="answers__item">
+                        <div data-click-item class="answers__item-head">
+                            <h4 class="answers__item-title">Как&#160;добраться до&#160;океанариума?&#160;</h4>
+                            <div class="answers__item-icon">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="answers__item-content">
+                            <p>Мы&#160;находимся в&#160;ТЦ&#160;Мармелад по&#160;адресу Шарлыкское шоссе, &#189;.</p>
+                        </div>
+                    </div>
+                    <div data-click-section class="answers__item">
+                        <div data-click-item class="answers__item-head">
+                            <h4 class="answers__item-title">Как&#160;добраться до&#160;океанариума?&#160;</h4>
+                            <div class="answers__item-icon">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="answers__item-content">
+                            <p>Мы&#160;находимся в&#160;ТЦ&#160;Мармелад по&#160;адресу Шарлыкское шоссе, &#189;.</p>
+                        </div>
+                    </div>
+                    <div data-click-section class="answers__item">
+                        <div data-click-item class="answers__item-head">
+                            <h4 class="answers__item-title">Как&#160;добраться до&#160;океанариума?&#160;</h4>
+                            <div class="answers__item-icon">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="answers__item-content">
+                            <p>Мы&#160;находимся в&#160;ТЦ&#160;Мармелад по&#160;адресу Шарлыкское шоссе, &#189;.</p>
+                        </div>
+                    </div>
+                    <div data-click-section class="answers__item">
+                        <div data-click-item class="answers__item-head">
+                            <h4 class="answers__item-title">Как&#160;добраться до&#160;океанариума?&#160;</h4>
+                            <div class="answers__item-icon">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="answers__item-content">
+                            <p>Мы&#160;находимся в&#160;ТЦ&#160;Мармелад по&#160;адресу Шарлыкское шоссе, &#189;.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="answers__column">
+                    <div data-click-section class="answers__item">
+                        <div data-click-item class="answers__item-head">
+                            <h4 class="answers__item-title">Что делать, если&#160;неправильно указали электронную почту при
+                                покупке билетов онлайн?&#160;</h4>
+                            <div class="answers__item-icon">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="answers__item-content">
+                            <p>Мы&#160;находимся в&#160;ТЦ&#160;Мармелад по&#160;адресу Шарлыкское шоссе, &#189;.</p>
+                        </div>
+                    </div>
+                    <div data-click-section class="answers__item">
+                        <div data-click-item class="answers__item-head">
+                            <h4 class="answers__item-title">Как&#160;добраться до&#160;океанариума?&#160;</h4>
+                            <div class="answers__item-icon">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="answers__item-content">
+                            <p>Мы&#160;находимся в&#160;ТЦ&#160;Мармелад по&#160;адресу Шарлыкское шоссе, &#189;.</p>
+                        </div>
+                    </div>
+                    <div data-click-section class="answers__item">
+                        <div data-click-item class="answers__item-head">
+                            <h4 class="answers__item-title">Как&#160;добраться до&#160;океанариума?&#160;</h4>
+                            <div class="answers__item-icon">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="answers__item-content">
+                            <p>Мы&#160;находимся в&#160;ТЦ&#160;Мармелад по&#160;адресу Шарлыкское шоссе, &#189;.</p>
+                        </div>
+                    </div>
+                    <div data-click-section class="answers__item">
+                        <div data-click-item class="answers__item-head">
+                            <h4 class="answers__item-title">Как&#160;добраться до&#160;океанариума?&#160;</h4>
+                            <div class="answers__item-icon">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="answers__item-content">
+                            <p>Мы&#160;находимся в&#160;ТЦ&#160;Мармелад по&#160;адресу Шарлыкское шоссе, &#189;.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer data-parallax class="footer">
+    <div class="footer__container">
+        <img loading="lazy" src="./img/logo-horizontal-dark.svg" alt="" class="footer__logo">
+        <div class="footer__content">
+            <img loading="lazy" data-parallax-item="-20, 0.01" src="./img/decor/fish-1.webp" alt="" class="footer__decor">
+            <div id="map" class="footer__map"></div>
+            <div class="footer__columns">
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Режим работы</h4>
+                    <p class="footer__column-text">Пн-Вс: 10:00&#160;&#8212; 21:00</p>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Адрес</h4>
+                    <a href="#" class="footer__column-text">г. Оренбург, Шарлыкское шоссе, &#189;</a>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__column-title">По&#160;вопросам приобретения билетов</h4>
+                    <a href="#" class="footer__column-text">+7&#160;(90)&#160;01-23-45-67</a>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Для&#160;заказа экскурсий</h4>
+                    <a href="#" class="footer__column-text">+7&#160;(90)&#160;01-23-45-67</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <a href="#" class="footer__link">Реквизиты организации</a>
+                <a href="#" class="footer__link">Пользовательское соглашение</a>
+                <a href="#" class="footer__link">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bg">
+        <img loading="lazy" src="./img/footer-bg.webp" alt="">
+    </div>
+</footer>
+
+<svg class="sprite" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 12 17" id="marker" xmlns="http://www.w3.org/2000/svg"><path d="M5.795 0C2.599 0 0 2.736 0 6.098c0 4.174 5.186 10.3 5.406 10.559.208.243.57.242.777 0 .22-.259 5.406-6.385 5.406-10.559C11.59 2.736 8.99 0 5.795 0Zm0 9.167c-1.608 0-2.916-1.377-2.916-3.069 0-1.691 1.308-3.068 2.916-3.068 1.607 0 2.915 1.377 2.915 3.068 0 1.692-1.308 3.069-2.915 3.069Z"/></symbol><symbol viewBox="0 0 13 15" id="phone" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.762 13.121c-.086.1-.19.226-.3.36-.276.335-.62.752-.836.92-1.135.89-2.653.465-3.726-.049-1.417-.677-2.959-1.925-4.344-3.515C2.17 9.248 1.083 7.477.493 5.853.046 4.621-.327 2.88.449 1.576c.148-.248.512-.642.804-.958.117-.127.226-.246.312-.345A.768.768 0 0 1 2.142 0c.216 0 .424.098.577.273l2.088 2.395c.152.176.238.414.238.662 0 .248-.086.486-.238.662l-.57.651a1.51 1.51 0 0 0-.353.801c-.04.304.008.614.134.885.782 1.694 1.99 3.08 3.467 3.977.235.146.506.2.77.154.265-.046.51-.188.698-.406l.567-.651a.768.768 0 0 1 .577-.274c.216 0 .424.099.577.274l2.088 2.395c.152.176.238.414.238.662 0 .248-.086.486-.238.661Z"/></symbol><symbol viewBox="0 0 15 14" id="star" xmlns="http://www.w3.org/2000/svg"><path d="m7.133 0 1.684 5.182h5.449L9.857 8.385l1.684 5.183-4.408-3.203-4.409 3.203 1.684-5.183L0 5.182h5.449L7.133 0Z"/></symbol></svg>
+<script src="js/common.js?v=1765322834175"></script>
+</body>
+</html>

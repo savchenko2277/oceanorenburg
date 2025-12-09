@@ -1,0 +1,53 @@
+@use 'lib' as * with(
+	$breakpoints: (
+		'xxxs': 360px,
+		'xxs': 480px,
+		'xs': 640px,
+		'sm': 780px,
+		'md': 960px,
+		'lg': 1100px,
+		'xlg': 1280px,
+		'xxlg': 1440px,
+		'xxxlg': 1680px,
+		'xxxxlg': 1928px
+	)
+);
+
+@use "../blocks/**/*.scss";
+
+// Подключение шрифтов
+
+@include font-face("Gilroy-Thin", "Gilroy", 100);
+@include font-face("Gilroy-UltraLight", "Gilroy", 200);
+@include font-face("Gilroy-Light", "Gilroy", 300);
+@include font-face("Gilroy-Regular", "Gilroy", 400);
+@include font-face("Gilroy-Medium", "Gilroy", 500);
+@include font-face("Gilroy-SemiBold", "Gilroy", 600);
+@include font-face("Gilroy-Bold", "Gilroy", 700);
+@include font-face("Gilroy-ExtraBold", "Gilroy", 800);
+@include font-face("Gilroy-Black", "Gilroy", 900);
+@include font-face("Gilroy-Heavy", "Gilroy", 950);
+
+body, html {
+	background-color: var(--background);
+	font-size: var(--size);
+	color: var(--dark);
+	font-family: "Gilroy", sans-serif;
+	line-height: 1.2;
+	font-weight: 400;
+	display: flex;
+	flex-flow: column nowrap;
+	min-height: 100vh;
+}
+
+.footer {
+	flex: 0 0 auto; 
+	margin-top: auto; 
+}
+
+.sprite {
+	display: none;
+}
+
+em { font-style: italic; }
+strong { font-weight: bold; }

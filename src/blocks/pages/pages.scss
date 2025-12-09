@@ -1,0 +1,40 @@
+@use 'lib' as *;
+
+.pages {
+	$self: &;
+
+	padding-top: fluid(150px, 70px);
+
+	&__container {
+		width: min(1200px, calc(100% - fluid(40px, 16px) * 2));
+		margin: 0 auto;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: fluid(20px, 16px);
+		margin-bottom: fluid(36px, 24px);
+	}
+
+	&__list-item {
+		font-size: fluid(24px, 20px);
+
+		font-weight: 600;
+		color: var(--blue);
+		pointer-events: none;
+
+		&.active {
+			pointer-events: all;
+			color: var(--dark);
+		}
+	}
+
+	&__info {
+		font-size: 14px;
+		font-style: italic;
+		opacity: 0.5;
+		max-width: 460px;
+	}
+
+}
