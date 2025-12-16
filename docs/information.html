@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css?v=1765899016193">
+    <link rel="stylesheet" href="css/swiper.css?v=1765899016193">
+    <link rel="stylesheet" href="css/flatpickr.css?v=1765899016193">
+    <title>ОРЕНБУРГСКИЙ ОКЕАНАРИУМ</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d41a53f1-28a6-4072-b94a-46f4fbb1874c&lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+		ymaps.ready(init);
+		function init() {
+			var myMap = new ymaps.Map(document.getElementById('map'), {
+				center: [55.76, 37.64],
+				zoom: 7
+			});
+		}
+	</script>
+</head>
+<body>
+<header class="header header_blue">
+    <div class="header__container container">
+        <div class="header__menu">
+            <ul class="header__list">
+                <li class="header__list-item"><a href="#">Главная</a></li>
+                <li class="header__list-item"><a href="#">Экспозиция</a></li>
+                <li class="header__list-item"><a href="#">Посетителям</a></li>
+                <li class="header__list-item"><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <a href="#" class="header__logo">
+            <img loading="lazy" src="./img/logo.svg" alt="">
+            <img loading="lazy" src="./img/logo-horizontal.svg" alt="">
+        </a>
+        <div class="header__side">
+            <a href="#" class="header__tel">
+                <svg><use xlink:href="#phone"></use></svg>
+                +7&#160;(90)&#160;01-23-45-67
+            </a>
+            <a href="#" class="header__location">
+                <div class="header__location-top">
+                    <svg><use xlink:href="#marker"></use></svg>
+                    Оренбург, Шарлыкское шоссе, &#189;
+                </div>
+                <b>Ежедневно с&#160;10 до&#160;21</b>
+            </a>
+            <button type="button" class="header__btn">КУПИТЬ БИЛЕТ</button>
+            <button class="header__burger">
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+
+    <section data-parallax class="information">
+        <div class="information__bg">
+            <img loading="lazy" src="./img/information-bg.webp" alt="">
+        </div>
+        <img data-parallax-item="-10, 0.01" loading="lazy" src="./img/decor/fish-10.webp" alt=""
+            class="information__fish">
+        <div class="information__container">
+            <div class="information__content">
+                <ul class="information__breadcumbs breadcumbs">
+                    <li class="breadcumbs__item"><a href="#">Главная</a></li>
+                    <li class="breadcumbs__item"><a href="#">Для&#160;посетителей</a></li>
+                </ul>
+                <h2 class="information__title">Информация для&#160;посетителей</h2>
+                <div class="information__time">
+                    <h4 class="information__time-title">Режим работы</h4>
+                    <div class="information__cards">
+                        <div class="information__card">
+                            <h4 class="information__card-title">
+                                <img loading="lazy" src="./img/icons/clock.svg" alt="">
+                                Часы работы
+                            </h4>
+                            <div class="information__card-content">
+                                <b>10:00 до&#160;21:00</b>
+                            </div>
+                        </div>
+                        <div class="information__card">
+                            <h4 class="information__card-title">
+                                <img loading="lazy" src="./img/icons/shariki.svg" alt="">
+                                Праздники
+                            </h4>
+                            <div class="information__card-content">
+                                <p>
+                                    <b>В&#160;государственные праздники работаем по&#160;обычному графику</b>, кроме 1&#160;января
+                                    и&#160;7&#160;мая (выходные)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="information__card">
+                            <h4 class="information__card-title">
+                                <img loading="lazy" src="./img/icons/ticket.svg" alt="">
+                                Часы работы
+                            </h4>
+                            <div class="information__card-content">
+                                <p>Осуществляется по&#160;билетам</p>
+                                <b>с&#160;10:00 до&#160;20:30</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ticket">
+                <div class="ticket__side">
+                    <img src="./img/ticket-logo.svg" alt="" class="ticket__logo">
+                </div>
+                <div class="ticket__main">
+                    <div class="ticket__top">
+                        <h2 class="ticket__title">Цены на&#160;билеты</h2>
+                        <a href="#" class="ticket__link ticket__link_pc rose-button">
+                            <div class="rose-button__content">
+                                <img loading="lazy" src="./img/acula.svg" alt="">
+                                <span>КУПИТЬ БИЛЕТ</span>
+                            </div>
+                        </a>
+                    </div>
+                    <p class="ticket__text">
+                        Билеты в&#160;океанариум можно приобрести на&#160;сайте, а&#160;также
+                        в&#160;кассах океанариума. Касса работает ежедневно с&#160;10 до&#160;20 часов, вход в&#160;океанариум
+                        осуществляется до&#160;20:30.
+                    </p>
+                    <div class="ticket__prices">
+                        <div class="ticket__price">
+                            <h4 class="ticket__price-title">Взрослый билет</h4>
+                            <b class="ticket__price-value">1000&#160;руб./1200&#160;руб.</b>
+                            <p class="ticket__price-about">Будни/выходные и&#160;праздничные дни</p>
+                        </div>
+                        <div class="ticket__price">
+                            <h4 class="ticket__price-title">Детский билет</h4>
+                            <b class="ticket__price-value">800&#160;руб./1000&#160;руб.</b>
+                            <p class="ticket__price-about">Будни/выходные и&#160;праздничные дни</p>
+                        </div>
+                    </div>
+                    <a href="#" class="ticket__link ticket__link_mobile rose-button">
+                        <div class="rose-button__content">
+                            <img loading="lazy" src="./img/acula.svg" alt="">
+                            <span>КУПИТЬ БИЛЕТ</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="ticket__code">
+                    <h4 class="ticket__code-title">контроль при&#160;входе</h4>
+                    <img loading="lazy" src="./img/ticket-code-image.webp" alt="" class="ticket__code-image">
+                    <p class="ticket__code-value">139472681048472713449</p>
+                </div>
+            </div>
+            <div class="information__buy">
+                <div class="information__buy-side">
+                    <input class="flatpickr information__calendar" type="text" placeholder="Выберите дату"
+                        readonly="readonly">
+                    <a href="#" class="information__buy-link rose-button">
+                        <div class="rose-button__content">
+                            <img loading="lazy" src="./img/acula.svg" alt="">
+                            <span>КУПИТЬ БИЛЕТ</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="information__rows">
+                    <div class="information__row">
+                        <h4 class="information__row-title">01</h4>
+                        <p class="information__row-text">
+                            Билеты, купленные для&#160;посещения Океанариума в&#160;будний день, в&#160;выходные/праздничные дни&#160;не
+                            действительны.
+                        </p>
+                    </div>
+                    <div class="information__row">
+                        <h4 class="information__row-title">02</h4>
+                        <p class="information__row-text">
+                            Срок действия приобретенных билетов&#160;&#8212; полгода со&#160;дня покупки.
+                        </p>
+                    </div>
+                    <div class="information__row">
+                        <h4 class="information__row-title">03</h4>
+                        <p class="information__row-text">
+                            Для&#160;юридических лиц дополнительные скидки не&#160;предоставляются.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sections-container sections-container_info">
+        <div class="sections-container__content">
+            <section data-parallax class="return">
+                <img data-parallax-item="-10, 0.01" loading="lazy" src="./img/decor/fish-11.webp" alt=""
+                    class="return__fish-1">
+                <img data-parallax-item="10, 0.05" loading="lazy" src="./img/decor/fish-12.webp" alt=""
+                    class="return__fish-2">
+                <div class="return__container">
+                    <h2 class="return__title">Обмен и&#160;возврат билетов</h2>
+                    <p class="return__desc">
+                        Возврат денежных средств за&#160;электронные билеты, приобретенные и&#160;оплаченные
+                        на&#160;официальном сайте Оренбургского океанариума
+                    </p>
+                    <div class="return__text">
+                        <p>
+                            1. Возврат денежных средств за&#160;электронные билеты, приобретенные по&#160;безналичному расчету на
+                            официальном сайте Оренбургского океанариума (www._____________-__.ru), осуществляется только
+                            на&#160;банковскую карту плательщика в&#160;соответствии с&#160;Положением Банка России от&#160;24.12.2004 года
+                            266&#160;&#8212; П&#160;&#171;Об&#160;эмиссии банковских карт и&#160;об&#160;операциях, совершаемых с&#160;использованием платежных
+                            карт&#187;.
+                        </p>
+                        <p>
+                            2. Для&#160;возврата денежных средств за&#160;электронный билет, необходимо написать запрос
+                            на&#160;возврат билета и&#160;направить сканы документов, подтверждающих покупку билета (банковский
+                            чек по&#160;платежной операции), QR- коды билетов, по&#160;которым необходимо провести возврат, на
+                            электронную почту&#160;clients@____.ru&#160;;
+                        </p>
+                        <p>
+                            3. Возврат переведенных средств производится на&#160;ваш банковский счёт в&#160;течение 5-30 рабочих
+                            дней
+                            (срок зависит от&#160;банка, который выдал вашу банковскую карту).
+                        </p>
+                    </div>
+                    <a href="#" class="return__mail">
+                        <img src="./img/icons/mail.svg" alt="">
+                        Почта для&#160;отправки заявлений о&#160;возврате билетов:&#160;clients@____________.ru
+                    </a>
+                </div>
+            </section>
+            <section class="order">
+                <div class="order__container">
+                    <img loading="lazy" src="./img/order-img.webp" alt="" class="order__image">
+                    <div class="order__content">
+                        <h2 class="order__title">Заказ экскурсии</h2>
+                        <div class="order__text">
+                            <p>
+                                Мы&#160;<b>организуем групповые и&#160;индивидуальные экскурсии с&#160;опытным гидом</b>, который сможет
+                                увлечь рассказом об&#160;обитателях подводного мира и&#160;детей, и&#160;взрослых. Вы&#160;узнаете
+                                невероятные факты о&#160;рыбах
+                                и&#160;животных, мы&#160;расскажем, как&#160;функционирует океанариум и&#160;как&#160;наши сотрудники заботятся о
+                                тех, кто его населяет.
+                            </p>
+                            <p>
+                                <b>Экскурсии проводятся как&#160;в&#160;индивидуальном, так и&#160;в&#160;групповом формате</b>. Стоимость
+                                экскурсии зависит от&#160;количества людей в&#160;группе.
+                            </p>
+                        </div>
+                        <div class="order__item">
+                            <h4 class="order__item-title">Забронировать экскурсию</h4>
+                            <a href="#" class="order__call">
+                                <img loading="lazy" src="./img/icons/phone.svg" alt="">
+                                +7&#160;(90)&#160;01-23-45-67
+                            </a>
+                            <a href="#" class="order__link rose-button">
+                                <div class="rose-button__content">
+                                    <img loading="lazy" src="./img/acula.svg" alt="">
+                                    <span>ЗАКАЗАТЬ ЭКСКУРСИЮ</span>
+                                </div>
+                            </a>
+                            <img loading="lazy" src="./img/penguin.webp" alt="" class="order__item-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="sections-container__bg">
+            <img loading="lazy" src="./img/site-container/info-1.webp" alt="">
+        </div>
+    </div>
+
+</main>
+
+<footer data-parallax class="footer">
+    <div class="footer__container">
+        <img loading="lazy" src="./img/logo-horizontal-dark.svg" alt="" class="footer__logo">
+        <div class="footer__content">
+            <img loading="lazy" data-parallax-item="-20, 0.01" src="./img/decor/fish-1.webp" alt="" class="footer__decor">
+            <div id="map" class="footer__map"></div>
+            <div class="footer__columns">
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Режим работы</h4>
+                    <p class="footer__column-text">Пн-Вс: 10:00&#160;&#8212; 21:00</p>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Адрес</h4>
+                    <a href="#" class="footer__column-text">г. Оренбург, Шарлыкское шоссе, &#189;</a>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__column-title">По&#160;вопросам приобретения билетов</h4>
+                    <a href="#" class="footer__column-text">+7&#160;(90)&#160;01-23-45-67</a>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Для&#160;заказа экскурсий</h4>
+                    <a href="#" class="footer__column-text">+7&#160;(90)&#160;01-23-45-67</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <a href="#" class="footer__link">Реквизиты организации</a>
+                <a href="#" class="footer__link">Пользовательское соглашение</a>
+                <a href="#" class="footer__link">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bg">
+        <img loading="lazy" src="./img/footer-bg.webp" alt="">
+    </div>
+</footer>
+
+<div class="modal modal_feed">
+    <div class="modal__container">
+        <div class="feed">
+            <div class="feed__container">
+                <h2 class="feed__title">КоРмление ПИНГВИНОВ</h2>
+                <div class="feed__content">
+                    <table class="feed__table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Понедельник</th>
+                                <td>11:00</td>
+                                <td>15:00</td>
+                                <td>19:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Вторник</th>
+                                <td>11:00</td>
+                                <td>15:00</td>
+                                <td>19:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Среда</th>
+                                <td>11:00</td>
+                                <td>15:00</td>
+                                <td>19:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Четверг</th>
+                                <td>11:00</td>
+                                <td>15:00</td>
+                                <td>19:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Пятница</th>
+                                <td>11:00</td>
+                                <td>15:00</td>
+                                <td>19:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Суббота</th>
+                                <td>11:00</td>
+                                <td>15:00</td>
+                                <td>19:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Воскресенье</th>
+                                <td>11:00</td>
+                                <td>15:00</td>
+                                <td>19:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <img loading="lazy" src="./img/feed/1.webp" alt="" class="feed__img">
+                </div>
+            </div>
+            <div data-modal-close class="feed__close">
+                <img loading="lazy" src="./img/icons/close.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<svg class="sprite" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 12 17" id="marker" xmlns="http://www.w3.org/2000/svg"><path d="M5.795 0C2.599 0 0 2.736 0 6.098c0 4.174 5.186 10.3 5.406 10.559.208.243.57.242.777 0 .22-.259 5.406-6.385 5.406-10.559C11.59 2.736 8.99 0 5.795 0Zm0 9.167c-1.608 0-2.916-1.377-2.916-3.069 0-1.691 1.308-3.068 2.916-3.068 1.607 0 2.915 1.377 2.915 3.068 0 1.692-1.308 3.069-2.915 3.069Z"/></symbol><symbol viewBox="0 0 13 15" id="phone" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.762 13.121c-.086.1-.19.226-.3.36-.276.335-.62.752-.836.92-1.135.89-2.653.465-3.726-.049-1.417-.677-2.959-1.925-4.344-3.515C2.17 9.248 1.083 7.477.493 5.853.046 4.621-.327 2.88.449 1.576c.148-.248.512-.642.804-.958.117-.127.226-.246.312-.345A.768.768 0 0 1 2.142 0c.216 0 .424.098.577.273l2.088 2.395c.152.176.238.414.238.662 0 .248-.086.486-.238.662l-.57.651a1.51 1.51 0 0 0-.353.801c-.04.304.008.614.134.885.782 1.694 1.99 3.08 3.467 3.977.235.146.506.2.77.154.265-.046.51-.188.698-.406l.567-.651a.768.768 0 0 1 .577-.274c.216 0 .424.099.577.274l2.088 2.395c.152.176.238.414.238.662 0 .248-.086.486-.238.661Z"/></symbol><symbol viewBox="0 0 15 14" id="star" xmlns="http://www.w3.org/2000/svg"><path d="m7.133 0 1.684 5.182h5.449L9.857 8.385l1.684 5.183-4.408-3.203-4.409 3.203 1.684-5.183L0 5.182h5.449L7.133 0Z"/></symbol></svg>
+<script src="js/common.js?v=1765899016193"></script>
+</body>
+</html>

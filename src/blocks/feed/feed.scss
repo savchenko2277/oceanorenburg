@@ -1,0 +1,67 @@
+@use 'lib' as *;
+
+.feed {
+	$self: &;
+
+	max-width: 1200px;
+	width: 100%;
+	padding: fluid(50px, 30px) fluid(60px, 20px) fluid(70px, 30px);
+	background: #fff;
+	border-radius: 20px;
+	height: fit-content;
+	position: relative;
+
+	&__container {}
+
+	&__title {
+		text-transform: uppercase;
+		font-size: fluid(42px, 30px);
+		font-weight: 500;
+		margin-bottom: fluid(45px, 15px);
+	}
+
+	&__content {
+		display: grid;
+		grid-template-columns: 1fr 348px;
+		align-items: center;
+
+		@include media("<=md") {
+			grid-template-columns: 100%;
+			gap: 20px;
+		}
+	}
+
+	&__table {
+		width: 100%;
+		font-size: fluid(21px, 15px);
+		border-collapse: separate;
+		border-spacing: 0 30px;
+
+		th {
+			font-weight: 700;
+		}
+
+		td {
+			@include media("<=md") {
+				&:not(:last-of-type)::after {
+					content: '|';
+					margin-left: 6px;
+				}
+			}
+		}
+	}
+
+	&__img {
+		border-radius: 10px;
+		aspect-ratio: 1 / 1;
+		width: 100%;
+	}
+
+	&__close {
+		position: absolute;
+		top: fluid(40px, 35px); right: fluid(40px, 25px);
+		cursor: pointer;
+		width: fluid(70px, 50px);
+	}
+
+}

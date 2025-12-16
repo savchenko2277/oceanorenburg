@@ -1,0 +1,27 @@
+@use 'lib' as *;
+
+.breadcumbs {
+	$self: &;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 12px;
+	font-weight: 500;
+	font-size: fluid(21px, 13px);
+
+	&__item {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 12px;
+
+		&:not(:last-child) {
+			&::after {
+				content: '/';
+				display: block;
+			}
+		}
+	}
+
+}

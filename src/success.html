@@ -1,0 +1,68 @@
+@@include("_head.html", {"id":"home"})
+
+<header class="header header_blue header_mini">
+    <div class="header__container container">
+        <div class="header__menu">
+            <ul class="header__list">
+                <li class="header__list-item"><a href="#">Главная</a></li>
+                <li class="header__list-item"><a href="#">Экспозиция</a></li>
+                <li class="header__list-item"><a href="#">Посетителям</a></li>
+                <li class="header__list-item"><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <a href="#" class="header__location">
+            <div class="header__location-top">
+                <svg>
+                    <use xlink:href="#marker"></use>
+                </svg>
+                Оренбург, Шарлыкское шоссе, 1/2
+            </div>
+            <b>Ежедневно с 10 до 21</b>
+        </a>
+        <a href="#" class="header__logo">
+            <img loading="lazy" src="./img/logo.svg" alt="">
+            <img loading="lazy" src="./img/logo-horizontal.svg" alt="">
+        </a>
+        <div class="header__side">
+            <a href="#" class="header__tel">
+                <svg>
+                    <use xlink:href="#phone"></use>
+                </svg>
+                +7 900 123 45 67
+            </a>
+            <button type="button" class="header__btn">КУПИТЬ БИЛЕТ</button>
+            <button class="header__burger">
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <section class="success">
+        <div class="success__container">
+            <h1 class="success__title">
+                Благодарим за приобретение билетОВ в океанариум
+            </h1>
+            <p class="success__desc">
+                Электронные билеты уже в пути и скоро будут отправлены на вашу почту.﻿  Проверьте настройки «Входящие» и
+                «Спам».﻿ Желаем ярких впечатлений от посещения!
+            </p>
+            <a href="#" class="success__link rose-button">
+                <div class="rose-button__content">
+                    <img loading="lazy" src="./img/acula.svg" alt="">
+                    <span>ВЕРНУТЬСЯ НА ГЛАВНУЮ</span>
+                </div>
+            </a>
+        </div>
+        <div class="success__bg">
+            <img loading="lazy" src="./img/success-bg.webp" alt="">
+        </div>
+    </section>
+</main>
+
+@@include("_sprite.svg")
+<script src="js/common.js?v=0"></script>
+</body>
+
+</html>

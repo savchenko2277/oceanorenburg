@@ -1,0 +1,162 @@
+@use 'lib' as *;
+
+.eat {
+	$self: &;
+
+	position: relative;
+	padding-top: fluid(64px, 50px);
+	padding-bottom: fluid(100px, 40px);
+
+	&__bg {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(360deg, rgba(230, 247, 250, 0) 91.82%, #E6F7FA 100%),
+				linear-gradient(180deg, rgba(230, 247, 250, 0) 46.16%, #E6F7FA 74.91%);
+
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__container {
+		position: relative;
+		z-index: 1;
+		width: min(1478px, calc(100% - 50px * 2));
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: minmax(200px, 600px) minmax(400px, 1fr);
+		gap: 90px;
+
+		@media (max-width: 399px) {
+			width: min(1478px, calc(100% - 16px * 2));
+		}
+
+		@include media("<=md") {
+			grid-template-columns: 100%;
+		}
+	}
+
+	&__show {
+		width: 100%;
+		aspect-ratio: 1 / 1;
+		border-radius: 50%;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		@include media("<=md") {
+			display: none;
+		}
+	}
+
+	&__content {}
+
+	&__title {
+		font-weight: 500;
+		font-size: fluid(55px, 30px);
+		max-width: 451px;
+		margin-bottom: 30px;
+	}
+
+	&__text {
+		font-size: fluid(21px, 15px);
+		margin-bottom: fluid(90px, 55px);
+	}
+
+	&__cards {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 15px;
+
+		@include media("<=xlg") {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include media("<=md") {
+			grid-template-columns: 100%;
+			gap: 20px;
+		}
+	}
+
+	&__card {
+		position: relative;
+		height: 285px;
+		overflow: hidden;
+		border-radius: 20px;
+		padding: 16px 24px 24px 24px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		border: 1px solid #1D4077;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(180deg, rgba(255, 255, 255, 0) 61.75%, #FFFFFF 100%);
+		}
+
+		&_blue {
+
+			#{$self}__card-title {
+				color: #1D4077;
+			}
+		}
+
+		&:hover {
+			#{$self}__card-image {
+				transform: scale(1.05);
+			}
+		}
+
+		@include media("<=md") {
+			height: 250px;
+		}
+	}
+
+	&__card-title {
+		color: #fff;
+		font-size: 21px;
+		font-weight: 700;
+	}
+
+	&__card-text {
+		position: relative;
+		z-index: 1;
+		color: #1D4077;
+		font-size: 16px;
+	}
+
+	&__card-image {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		z-index: -1;
+		transition: all var(--trans);
+	}
+
+}

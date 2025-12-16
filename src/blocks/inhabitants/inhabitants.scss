@@ -1,0 +1,142 @@
+@use 'lib' as *;
+
+.inhabitants {
+	$self: &;
+
+	padding-top: fluid(120px, 60px);
+	padding-bottom: fluid(120px, 30px);
+	position: relative;
+
+	&__container {
+		display: grid;
+		grid-template-columns: 400px 465px 1fr;
+		width: min(1478px, calc(100% - 50px * 2));
+		margin: 0 auto;
+		z-index: 1;
+		position: relative;
+		gap: fluid(70px, 48px) 24px;
+
+		@media (max-width: 399px) {
+			width: min(1478px, calc(100% - 16px * 2));
+		}
+
+		@include media("<=xlg") {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		@include media("<=md") {
+			grid-template-columns: repeat(2, 1fr);
+			gap: fluid(70px, 48px) 10px;
+		}
+	}
+
+	&__photo {
+		height: fluid(600px, 200px);
+		position: relative;
+
+		img:nth-child(1) {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		&_first {
+			img {
+				border-radius: 70% 20px 20px 20px;
+			}
+		}
+
+		&_second {
+			img {
+				border-radius: 20px;
+			}
+		}
+
+		&_third {
+			grid-row: auto / span 2;
+			height: auto;
+
+			img {
+				border-radius: 20px 50% 500px 500px;
+			}
+
+			@include media("<=md") {
+				grid-row: 4;
+				grid-column: span 2;
+				border-radius: 20px 200% 500px 500px;
+			}
+		}
+	}
+
+	&__content {
+		grid-column: 1 / span 2;
+	}
+
+	&__title {
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: fluid(56px, 30px);
+		max-width: 644px;
+		margin-bottom: 30px;
+
+		@include media("<=md") {
+			max-width: 260px;
+		}
+	}
+
+	&__text {
+		font-size: fluid(21px, 15px);
+		max-width: 721px;
+	}
+
+	&__link.rose-button {
+		width: 100%;
+		max-width: 360px;
+		grid-row: 3;
+		grid-column: span 2;
+	}
+
+	&__cherepaha {
+		position: absolute;
+		top: fluid(-127px, -25px);
+		right: fluid(-70px, -10px);
+		width: fluid(390px, 210px);
+		z-index: 2;
+	}
+
+	&__bg {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+
+		&::after {
+			content: '';
+			position: absolute;
+			inset: 0;
+			background: linear-gradient(360deg, rgba(230, 247, 250, 0) 91.82%, #E6F7FA 100%),
+				linear-gradient(180deg, rgba(230, 247, 250, 0) 85.74%, #E6F7FA 100%);
+
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__fish {
+		position: absolute;
+		bottom: 0; left: 40%;
+		width: fluid(360px, 140px);
+		z-index: 3;
+
+		@include media("<=md") {
+			bottom: auto;
+			top: 226px;
+			left: 50%;
+		}
+	}
+
+}

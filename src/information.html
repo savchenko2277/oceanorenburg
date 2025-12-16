@@ -1,0 +1,218 @@
+@@include("_head.html", {"id":"home"})
+@@include("_header.html")
+
+<main class="main">
+
+    <section data-parallax class="information">
+        <div class="information__bg">
+            <img loading="lazy" src="./img/information-bg.webp" alt="">
+        </div>
+        <img data-parallax-item="-10, 0.01" loading="lazy" src="./img/decor/fish-10.webp" alt=""
+            class="information__fish">
+        <div class="information__container">
+            <div class="information__content">
+                <ul class="information__breadcumbs breadcumbs">
+                    <li class="breadcumbs__item"><a href="#">Главная</a></li>
+                    <li class="breadcumbs__item"><a href="#">Для посетителей</a></li>
+                </ul>
+                <h2 class="information__title">Информация для посетителей</h2>
+                <div class="information__time">
+                    <h4 class="information__time-title">Режим работы</h4>
+                    <div class="information__cards">
+                        <div class="information__card">
+                            <h4 class="information__card-title">
+                                <img loading="lazy" src="./img/icons/clock.svg" alt="">
+                                Часы работы
+                            </h4>
+                            <div class="information__card-content">
+                                <b>10:00 до 21:00</b>
+                            </div>
+                        </div>
+                        <div class="information__card">
+                            <h4 class="information__card-title">
+                                <img loading="lazy" src="./img/icons/shariki.svg" alt="">
+                                Праздники
+                            </h4>
+                            <div class="information__card-content">
+                                <p>
+                                    <b>В государственные праздники работаем по обычному графику</b>, кроме 1 января
+                                    и 7 мая (выходные)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="information__card">
+                            <h4 class="information__card-title">
+                                <img loading="lazy" src="./img/icons/ticket.svg" alt="">
+                                Часы работы
+                            </h4>
+                            <div class="information__card-content">
+                                <p>Осуществляется по билетам</p>
+                                <b>с 10:00 до 20:30</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ticket">
+                <div class="ticket__side">
+                    <img src="./img/ticket-logo.svg" alt="" class="ticket__logo">
+                </div>
+                <div class="ticket__main">
+                    <div class="ticket__top">
+                        <h2 class="ticket__title">Цены на билеты</h2>
+                        <a href="#" class="ticket__link ticket__link_pc rose-button">
+                            <div class="rose-button__content">
+                                <img loading="lazy" src="./img/acula.svg" alt="">
+                                <span>КУПИТЬ БИЛЕТ</span>
+                            </div>
+                        </a>
+                    </div>
+                    <p class="ticket__text">
+                        Билеты в океанариум можно приобрести на сайте, а также
+                        в кассах океанариума. Касса работает ежедневно с 10 до 20 часов, вход в океанариум
+                        осуществляется до 20:30.
+                    </p>
+                    <div class="ticket__prices">
+                        <div class="ticket__price">
+                            <h4 class="ticket__price-title">Взрослый билет</h4>
+                            <b class="ticket__price-value">1000 руб./1200 руб.</b>
+                            <p class="ticket__price-about">Будни/выходные и праздничные дни</p>
+                        </div>
+                        <div class="ticket__price">
+                            <h4 class="ticket__price-title">Детский билет</h4>
+                            <b class="ticket__price-value">800 руб./1000 руб.</b>
+                            <p class="ticket__price-about">Будни/выходные и праздничные дни</p>
+                        </div>
+                    </div>
+                    <a href="#" class="ticket__link ticket__link_mobile rose-button">
+                        <div class="rose-button__content">
+                            <img loading="lazy" src="./img/acula.svg" alt="">
+                            <span>КУПИТЬ БИЛЕТ</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="ticket__code">
+                    <h4 class="ticket__code-title">контроль при входе</h4>
+                    <img loading="lazy" src="./img/ticket-code-image.webp" alt="" class="ticket__code-image">
+                    <p class="ticket__code-value">139472681048472713449</p>
+                </div>
+            </div>
+            <div class="information__buy">
+                <div class="information__buy-side">
+                    <input class="flatpickr information__calendar" type="text" placeholder="Выберите дату"
+                        readonly="readonly">
+                    <a href="#" class="information__buy-link rose-button">
+                        <div class="rose-button__content">
+                            <img loading="lazy" src="./img/acula.svg" alt="">
+                            <span>КУПИТЬ БИЛЕТ</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="information__rows">
+                    <div class="information__row">
+                        <h4 class="information__row-title">01</h4>
+                        <p class="information__row-text">
+                            Билеты, купленные для посещения Океанариума в будний день, в выходные/праздничные дни не
+                            действительны.
+                        </p>
+                    </div>
+                    <div class="information__row">
+                        <h4 class="information__row-title">02</h4>
+                        <p class="information__row-text">
+                            Срок действия приобретенных билетов – полгода со дня покупки.
+                        </p>
+                    </div>
+                    <div class="information__row">
+                        <h4 class="information__row-title">03</h4>
+                        <p class="information__row-text">
+                            Для юридических лиц дополнительные скидки не предоставляются.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sections-container sections-container_info">
+        <div class="sections-container__content">
+            <section data-parallax class="return">
+                <img data-parallax-item="-10, 0.01" loading="lazy" src="./img/decor/fish-11.webp" alt=""
+                    class="return__fish-1">
+                <img data-parallax-item="10, 0.05" loading="lazy" src="./img/decor/fish-12.webp" alt=""
+                    class="return__fish-2">
+                <div class="return__container">
+                    <h2 class="return__title">Обмен и возврат билетов</h2>
+                    <p class="return__desc">
+                        Возврат денежных средств за электронные билеты, приобретенные и оплаченные
+                        на официальном сайте Оренбургского океанариума
+                    </p>
+                    <div class="return__text">
+                        <p>
+                            1. Возврат денежных средств за электронные билеты, приобретенные по безналичному расчету на
+                            официальном сайте Оренбургского океанариума (www._____________-__.ru), осуществляется только
+                            на банковскую карту плательщика в соответствии с Положением Банка России от 24.12.2004 года
+                            266 – П «Об эмиссии банковских карт и об операциях, совершаемых с использованием платежных
+                            карт».
+                        </p>
+                        <p>
+                            2. Для возврата денежных средств за электронный билет, необходимо написать запрос
+                            на возврат билета и направить сканы документов, подтверждающих покупку билета (банковский
+                            чек по платежной операции), QR- коды билетов, по которым необходимо провести возврат, на
+                            электронную почту clients@____.ru ;
+                        </p>
+                        <p>
+                            3. Возврат переведенных средств производится на ваш банковский счёт в течение 5-30 рабочих
+                            дней
+                            (срок зависит от банка, который выдал вашу банковскую карту).
+                        </p>
+                    </div>
+                    <a href="#" class="return__mail">
+                        <img src="./img/icons/mail.svg" alt="">
+                        Почта для отправки заявлений о возврате билетов: clients@____________.ru
+                    </a>
+                </div>
+            </section>
+            <section class="order">
+                <div class="order__container">
+                    <img loading="lazy" src="./img/order-img.webp" alt="" class="order__image">
+                    <div class="order__content">
+                        <h2 class="order__title">Заказ экскурсии</h2>
+                        <div class="order__text">
+                            <p>
+                                Мы <b>организуем групповые и индивидуальные экскурсии с опытным гидом</b>, который сможет
+                                увлечь рассказом об обитателях подводного мира и детей, и взрослых. Вы узнаете
+                                невероятные факты о рыбах
+                                и животных, мы расскажем, как функционирует океанариум и как наши сотрудники заботятся о
+                                тех, кто его населяет.
+                            </p>
+                            <p>
+                                <b>Экскурсии проводятся как в индивидуальном, так и в групповом формате</b>. Стоимость
+                                экскурсии зависит от количества людей в группе.
+                            </p>
+                        </div>
+                        <div class="order__item">
+                            <h4 class="order__item-title">Забронировать экскурсию</h4>
+                            <a href="#" class="order__call">
+                                <img loading="lazy" src="./img/icons/phone.svg" alt="">
+                                +7 900 123 45 67
+                            </a>
+                            <a href="#" class="order__link rose-button">
+                                <div class="rose-button__content">
+                                    <img loading="lazy" src="./img/acula.svg" alt="">
+                                    <span>ЗАКАЗАТЬ ЭКСКУРСИЮ</span>
+                                </div>
+                            </a>
+                            <img loading="lazy" src="./img/penguin.webp" alt="" class="order__item-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="sections-container__bg">
+            <img loading="lazy" src="./img/site-container/info-1.webp" alt="">
+        </div>
+    </div>
+
+</main>
+
+@@include("_bottom.html")

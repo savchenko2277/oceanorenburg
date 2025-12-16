@@ -4,6 +4,11 @@ import "./blocks.js";
 
 import Swiper from 'swiper';
 import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
+import flatpickr from "flatpickr";
+import { Russian } from "flatpickr/dist/l10n/ru.js"
+
+let ourSwiper;
+let gallerySwiper;
 
 // Функции
 
@@ -97,6 +102,23 @@ const setSwipers = () => {
 	});
 }
 
+const setOurSwiper = () => {
+	if (window.matchMedia('(max-width: 640px)').matches) {
+		ourSwiper = new Swiper('.our__swiper.swiper', {
+			modules: [Navigation],
+			slidesPerView: 1,
+			spaceBetween: 15,
+			loop: true,
+			navigation: {
+				prevEl: document.querySelector('.our__navigation-btn_prev'),
+				nextEl: document.querySelector('.our__navigation-btn_next'),
+			}
+		})
+	} else {
+		ourSwiper?.destroy();
+	}
+}
+
 const setScroll = (value) => {
 	document.body.style.overflow = value ? 'hidden' : '';
 	document.body.style.paddingRight = value ? 'var(--sw)' : '';
@@ -136,6 +158,30 @@ const setClickSections = () => {
 	});
 }
 
+const setGallerySwiper = () => {
+	if(window.matchMedia('(max-width: 780px)').matches) {
+		const gallerySwiper = new Swiper('.gallery__photos.swiper', {
+			modules: [Navigation],
+			slidesPerView: 1,
+			spaceBetween: 15,
+			loop: true,
+			navigation: {
+				prevEl: document.querySelector('.gallery__navigation-btn_prev'),
+				nextEl: document.querySelector('.gallery__navigation-btn_next'),
+			}
+		})
+	} else {
+		gallerySwiper?.destroy();
+	}
+}
+
+const setCalendares = () => {
+	flatpickr('.flatpickr', {
+		inline: true,
+		"locale": Russian
+	});
+}
+
 // Запуск функций
 document.addEventListener('DOMContentLoaded', () => {
 	updateVH();
@@ -144,6 +190,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	setSwipers();
 	setHeader();
 	setClickSections();
+	setOurSwiper();
+	setGallerySwiper();
+	setCalendares();
+
+	window.addEventListener("resize", throttle(setOurSwiper, 200));
+	window.addEventListener("resize", throttle(setGallerySwiper, 200));
 });
-
-

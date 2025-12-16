@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css?v=1765899016193">
+    <link rel="stylesheet" href="css/swiper.css?v=1765899016193">
+    <link rel="stylesheet" href="css/flatpickr.css?v=1765899016193">
+    <title>ОРЕНБУРГСКИЙ ОКЕАНАРИУМ</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d41a53f1-28a6-4072-b94a-46f4fbb1874c&lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+		ymaps.ready(init);
+		function init() {
+			var myMap = new ymaps.Map(document.getElementById('map'), {
+				center: [55.76, 37.64],
+				zoom: 7
+			});
+		}
+	</script>
+</head>
+<body>
+<header class="header header_blue">
+    <div class="header__container container">
+        <div class="header__menu">
+            <ul class="header__list">
+                <li class="header__list-item"><a href="#">Главная</a></li>
+                <li class="header__list-item"><a href="#">Экспозиция</a></li>
+                <li class="header__list-item"><a href="#">Посетителям</a></li>
+                <li class="header__list-item"><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <a href="#" class="header__logo">
+            <img loading="lazy" src="./img/logo.svg" alt="">
+            <img loading="lazy" src="./img/logo-horizontal.svg" alt="">
+        </a>
+        <div class="header__side">
+            <a href="#" class="header__tel">
+                <svg><use xlink:href="#phone"></use></svg>
+                +7&#160;(90)&#160;01-23-45-67
+            </a>
+            <a href="#" class="header__location">
+                <div class="header__location-top">
+                    <svg><use xlink:href="#marker"></use></svg>
+                    Оренбург, Шарлыкское шоссе, &#189;
+                </div>
+                <b>Ежедневно с&#160;10 до&#160;21</b>
+            </a>
+            <button type="button" class="header__btn">КУПИТЬ БИЛЕТ</button>
+            <button class="header__burger">
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <section data-parallax class="our">
+        <div class="our__container">
+            <img data-parallax-item="-10, 0.01" loading="lazy" src="./img/decor/fish-5.webp" alt="" class="our__fish">
+            <ul class="our__breadcumbs breadcumbs">
+                <li class="breadcumbs__item"><a href="#">Главная</a></li>
+                <li class="breadcumbs__item"><a href="#">О&#160;нас</a></li>
+                <li class="breadcumbs__item"><a href="#">Наши обитатели</a></li>
+            </ul>
+            <h1 class="our__title">НАШИ ОБИТАТЕЛИ</h1>
+            <div class="our__navigation">
+                <button class="our__navigation-btn our__navigation-btn_prev">
+                    <img src="./img/icons/arrow-left.svg" alt="">
+                </button>
+                <button class="our__navigation-btn our__navigation-btn_next">
+                    <img src="./img/icons/arrow-right.svg" alt="">
+                </button>
+                <p class="our__navigation-text">
+                    листайте вправо
+                </p>
+            </div>
+            <div class="our__swiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="our__card swiper-slide">
+                        <div class="our__card-image">
+                            <img loading="lazy" src="./img/our/1.webp" alt="">
+                        </div>
+                        <h4 class="our__card-title">Голубой дельфин</h4>
+                    </div>
+                    <div class="our__card swiper-slide">
+                        <div class="our__card-image">
+                            <img loading="lazy" src="./img/our/1.webp" alt="">
+                        </div>
+                        <h4 class="our__card-title">Голубой дельфин</h4>
+                    </div>
+                    <div class="our__card swiper-slide">
+                        <div class="our__card-image">
+                            <img loading="lazy" src="./img/our/1.webp" alt="">
+                        </div>
+                        <h4 class="our__card-title">Голубой дельфин</h4>
+                    </div>
+                    <div class="our__card swiper-slide">
+                        <div class="our__card-image">
+                            <img loading="lazy" src="./img/our/1.webp" alt="">
+                        </div>
+                        <h4 class="our__card-title">Голубой дельфин</h4>
+                    </div>
+                    <div class="our__card swiper-slide">
+                        <div class="our__card-image">
+                            <img loading="lazy" src="./img/our/1.webp" alt="">
+                        </div>
+                        <h4 class="our__card-title">Голубой дельфин</h4>
+                    </div>
+                    <div class="our__card swiper-slide">
+                        <div class="our__card-image">
+                            <img loading="lazy" src="./img/our/1.webp" alt="">
+                        </div>
+                        <h4 class="our__card-title">Голубой дельфин</h4>
+                    </div>
+                    <div class="our__card our__card_width swiper-slide">
+                        <div class="our__card-image">
+                            <img loading="lazy" src="./img/our/1.webp" alt="">
+                        </div>
+                        <h4 class="our__card-title">Голубой дельфин</h4>
+                    </div>
+                    <div class="our__card swiper-slide">
+                        <div class="our__card-image">
+                            <img loading="lazy" src="./img/our/1.webp" alt="">
+                        </div>
+                        <h4 class="our__card-title">Голубой дельфин</h4>
+                    </div>
+                    <div class="our__card swiper-slide">
+                        <div class="our__card-image">
+                            <img loading="lazy" src="./img/our/1.webp" alt="">
+                        </div>
+                        <h4 class="our__card-title">Голубой дельфин</h4>
+                    </div>
+                    <div class="our__card swiper-slide">
+                        <div class="our__card-image">
+                            <img loading="lazy" src="./img/our/1.webp" alt="">
+                        </div>
+                        <h4 class="our__card-title">Голубой дельфин</h4>
+                    </div>
+                    <div class="our__card swiper-slide">
+                        <div class="our__card-image">
+                            <img loading="lazy" src="./img/our/1.webp" alt="">
+                        </div>
+                        <h4 class="our__card-title">Голубой дельфин</h4>
+                    </div>
+                    <div class="our__card our__card_width swiper-slide">
+                        <div class="our__card-image">
+                            <img loading="lazy" src="./img/our/1.webp" alt="">
+                        </div>
+                        <h4 class="our__card-title">Голубой дельфин</h4>
+                    </div>
+                    <div class="our__card swiper-slide">
+                        <div class="our__card-image">
+                            <img loading="lazy" src="./img/our/1.webp" alt="">
+                        </div>
+                        <h4 class="our__card-title">Голубой дельфин</h4>
+                    </div>
+                    <div class="our__card swiper-slide">
+                        <div class="our__card-image">
+                            <img loading="lazy" src="./img/our/1.webp" alt="">
+                        </div>
+                        <h4 class="our__card-title">Голубой дельфин</h4>
+                    </div>
+                    <div class="our__card swiper-slide">
+                        <div class="our__card-image">
+                            <img loading="lazy" src="./img/our/1.webp" alt="">
+                        </div>
+                        <h4 class="our__card-title">Голубой дельфин</h4>
+                    </div>
+                    <div class="our__card swiper-slide">
+                        <div class="our__card-image">
+                            <img loading="lazy" src="./img/our/1.webp" alt="">
+                        </div>
+                        <h4 class="our__card-title">Голубой дельфин</h4>
+                    </div>
+                    <div class="our__card swiper-slide">
+                        <div class="our__card-image">
+                            <img loading="lazy" src="./img/our/1.webp" alt="">
+                        </div>
+                        <h4 class="our__card-title">Голубой дельфин</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="our__bg">
+            <img loading="lazy" src="./img/our-bg.webp" alt="">
+        </div>
+    </section>
+</main>
+
+<footer data-parallax class="footer">
+    <div class="footer__container">
+        <img loading="lazy" src="./img/logo-horizontal-dark.svg" alt="" class="footer__logo">
+        <div class="footer__content">
+            <img loading="lazy" data-parallax-item="-20, 0.01" src="./img/decor/fish-1.webp" alt="" class="footer__decor">
+            <div id="map" class="footer__map"></div>
+            <div class="footer__columns">
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Режим работы</h4>
+                    <p class="footer__column-text">Пн-Вс: 10:00&#160;&#8212; 21:00</p>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Адрес</h4>
+                    <a href="#" class="footer__column-text">г. Оренбург, Шарлыкское шоссе, &#189;</a>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__column-title">По&#160;вопросам приобретения билетов</h4>
+                    <a href="#" class="footer__column-text">+7&#160;(90)&#160;01-23-45-67</a>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Для&#160;заказа экскурсий</h4>
+                    <a href="#" class="footer__column-text">+7&#160;(90)&#160;01-23-45-67</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <a href="#" class="footer__link">Реквизиты организации</a>
+                <a href="#" class="footer__link">Пользовательское соглашение</a>
+                <a href="#" class="footer__link">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bg">
+        <img loading="lazy" src="./img/footer-bg.webp" alt="">
+    </div>
+</footer>
+
+<div class="modal modal_feed">
+    <div class="modal__container">
+        <div class="feed">
+            <div class="feed__container">
+                <h2 class="feed__title">КоРмление ПИНГВИНОВ</h2>
+                <div class="feed__content">
+                    <table class="feed__table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Понедельник</th>
+                                <td>11:00</td>
+                                <td>15:00</td>
+                                <td>19:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Вторник</th>
+                                <td>11:00</td>
+                                <td>15:00</td>
+                                <td>19:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Среда</th>
+                                <td>11:00</td>
+                                <td>15:00</td>
+                                <td>19:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Четверг</th>
+                                <td>11:00</td>
+                                <td>15:00</td>
+                                <td>19:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Пятница</th>
+                                <td>11:00</td>
+                                <td>15:00</td>
+                                <td>19:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Суббота</th>
+                                <td>11:00</td>
+                                <td>15:00</td>
+                                <td>19:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Воскресенье</th>
+                                <td>11:00</td>
+                                <td>15:00</td>
+                                <td>19:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <img loading="lazy" src="./img/feed/1.webp" alt="" class="feed__img">
+                </div>
+            </div>
+            <div data-modal-close class="feed__close">
+                <img loading="lazy" src="./img/icons/close.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<svg class="sprite" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 12 17" id="marker" xmlns="http://www.w3.org/2000/svg"><path d="M5.795 0C2.599 0 0 2.736 0 6.098c0 4.174 5.186 10.3 5.406 10.559.208.243.57.242.777 0 .22-.259 5.406-6.385 5.406-10.559C11.59 2.736 8.99 0 5.795 0Zm0 9.167c-1.608 0-2.916-1.377-2.916-3.069 0-1.691 1.308-3.068 2.916-3.068 1.607 0 2.915 1.377 2.915 3.068 0 1.692-1.308 3.069-2.915 3.069Z"/></symbol><symbol viewBox="0 0 13 15" id="phone" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.762 13.121c-.086.1-.19.226-.3.36-.276.335-.62.752-.836.92-1.135.89-2.653.465-3.726-.049-1.417-.677-2.959-1.925-4.344-3.515C2.17 9.248 1.083 7.477.493 5.853.046 4.621-.327 2.88.449 1.576c.148-.248.512-.642.804-.958.117-.127.226-.246.312-.345A.768.768 0 0 1 2.142 0c.216 0 .424.098.577.273l2.088 2.395c.152.176.238.414.238.662 0 .248-.086.486-.238.662l-.57.651a1.51 1.51 0 0 0-.353.801c-.04.304.008.614.134.885.782 1.694 1.99 3.08 3.467 3.977.235.146.506.2.77.154.265-.046.51-.188.698-.406l.567-.651a.768.768 0 0 1 .577-.274c.216 0 .424.099.577.274l2.088 2.395c.152.176.238.414.238.662 0 .248-.086.486-.238.661Z"/></symbol><symbol viewBox="0 0 15 14" id="star" xmlns="http://www.w3.org/2000/svg"><path d="m7.133 0 1.684 5.182h5.449L9.857 8.385l1.684 5.183-4.408-3.203-4.409 3.203 1.684-5.183L0 5.182h5.449L7.133 0Z"/></symbol></svg>
+<script src="js/common.js?v=1765899016193"></script>
+</body>
+</html>

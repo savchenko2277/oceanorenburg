@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css?v=1765899016193">
+    <link rel="stylesheet" href="css/swiper.css?v=1765899016193">
+    <link rel="stylesheet" href="css/flatpickr.css?v=1765899016193">
+    <title>ОРЕНБУРГСКИЙ ОКЕАНАРИУМ</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d41a53f1-28a6-4072-b94a-46f4fbb1874c&lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+		ymaps.ready(init);
+		function init() {
+			var myMap = new ymaps.Map(document.getElementById('map'), {
+				center: [55.76, 37.64],
+				zoom: 7
+			});
+		}
+	</script>
+</head>
+<body>
+<header class="header header_blue">
+    <div class="header__container container">
+        <div class="header__menu">
+            <ul class="header__list">
+                <li class="header__list-item"><a href="#">Главная</a></li>
+                <li class="header__list-item"><a href="#">Экспозиция</a></li>
+                <li class="header__list-item"><a href="#">Посетителям</a></li>
+                <li class="header__list-item"><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <a href="#" class="header__logo">
+            <img loading="lazy" src="./img/logo.svg" alt="">
+            <img loading="lazy" src="./img/logo-horizontal.svg" alt="">
+        </a>
+        <div class="header__side">
+            <a href="#" class="header__tel">
+                <svg><use xlink:href="#phone"></use></svg>
+                +7&#160;(90)&#160;01-23-45-67
+            </a>
+            <a href="#" class="header__location">
+                <div class="header__location-top">
+                    <svg><use xlink:href="#marker"></use></svg>
+                    Оренбург, Шарлыкское шоссе, &#189;
+                </div>
+                <b>Ежедневно с&#160;10 до&#160;21</b>
+            </a>
+            <button type="button" class="header__btn">КУПИТЬ БИЛЕТ</button>
+            <button class="header__burger">
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+
+    <section data-parallax class="about">
+        <img data-parallax-item="-10, 0.01" loading="lazy" src="./img/decor/fish-6.webp" alt="" class="about__fish-1">
+        <div class="about__container">
+            <ul class="about__breadcumbs breadcumbs">
+                <li class="breadcumbs__item"><a href="#">Главная</a></li>
+                <li class="breadcumbs__item"><a href="#">О&#160;нас</a></li>
+            </ul>
+            <div class="about__content">
+                <h2 class="about__title">ПРО&#160;НАШ ОКЕАНАРИУМ</h2>
+                <p class="about__paragraph about__paragraph_second">
+                    Оренбургский океанариум&#160;&#8212; это яркие впечатления об&#160;обителях подводного мира, которые не&#160;оставят
+                    равнодушными ни&#160;детей,
+                    ни&#160;взрослых.
+                    <b>
+                        Мы&#160;стремимся познакомить жителей и&#160;гостей города
+                        с&#160;удивительным миром водных обитателей,
+                    </b>
+                    заботимся о&#160;животных
+                    и&#160;пропагандируем бережное отношение к&#160;природе.
+                </p>
+                <div class="about__image about__image_first">
+                    <img src="./img/about/1.webp" alt="">
+                </div>
+                <div class="about__image about__image_second">
+                    <img src="./img/about/2.webp" alt="">
+                </div>
+                <div class="about__cards">
+                    <div class="about__card">
+                        <b class="about__card-title">>2500 м2</b>
+                        <p class="about__card-text">
+                            Площадь океанариума
+                        </p>
+                    </div>
+                    <div class="about__card">
+                        <b class="about__card-title">>3000</b>
+                        <p class="about__card-text">
+                            Обитателей в&#160;экспозиции
+                        </p>
+                    </div>
+                </div>
+                <div class="about__info-card">
+                    <img data-parallax-item="10, 0.01" loading="lazy" src="./img/decor/fish-nemo.webp" alt=""
+                        class="about__fish-2">
+                    <img loading="lazy" src="./img/icons/metka.svg" alt="" class="about__info-card-icon">
+                    <div class="about__info-card-content">
+                        <b class="about__info-card-title">1 на&#160;Южном Урале</b>
+                        <p class="about__info-card-text">
+                            и&#160;самый большой в&#160;ПФО океанариум
+                        </p>
+                    </div>
+                </div>
+                <p class="about__paragraph about__paragraph_first">
+                    <b>Дата открытия океанариума&#160;&#8212; третий квартал 2026 года.</b>
+                    В&#160;экспозициях океанариума будет размещено более 3 000 редких и&#160;краснокнижных рыб и&#160;животных из
+                    разных климатических зон планеты. Среди обитателей&#160;&#8212; акулы, пингвины, крокодилы, скаты, мурены и
+                    множество других представителей морской фауны.
+                    В&#160;уникальном пространстве океанариума будут проводиться научно-образовательные мероприятия, уроки
+                    биологии для&#160;школьников и&#160;студентов, экскурсии для&#160;взрослых и&#160;детей.
+                </p>
+                <p class="about__paragraph about__paragraph_third">
+                    В&#160;Оренбургском океанариуме будут представлены редчайшие виды рыб и&#160;животных, для&#160;которых будут
+                    воссозданы условия естественной среды обитания. <b>Мы&#160;собираем лучшую коллекцию морских
+                        обителей</b>, чтобы
+                    визит в&#160;наш океанариум смог удивить вас.
+                </p>
+            </div>
+        </div>
+        <div class="about__bg">
+            <img loading="lazy" src="./img/about-bg.webp" alt="">
+        </div>
+    </section>
+
+    <section data-parallax class="inhabitants">
+        <div class="inhabitants__bg">
+            <img loading="lazy" src="./img/inhabitants-bg.webp" alt="">
+        </div>
+        <div class="inhabitants__container container">
+            <div class="inhabitants__photo inhabitants__photo_first">
+                <img loading="lazy" src="./img/inhabitants/1.webp" alt="">
+            </div>
+            <div class="inhabitants__photo inhabitants__photo_second">
+                <img loading="lazy" src="./img/inhabitants/2.webp" alt="">
+            </div>
+            <div class="inhabitants__photo inhabitants__photo_third">
+                <img loading="lazy" src="./img/inhabitants/3.webp" alt="">
+                <img data-parallax-item="10, 0.01" loading="lazy" src="./img/decor/cherepaha.webp" alt=""
+                    class="inhabitants__cherepaha">
+            </div>
+            <div class="inhabitants__content">
+                <h2 class="inhabitants__title">
+                    НАШИ НЕВЕРОЯТНЫЕ ОБИТАТЕЛИ
+                </h2>
+                <div class="inhabitants__text">
+                    <p>
+                        <b>Единственный на&#160;Южном Урале и&#160;крупнейший в&#160;ПФО океанариум</b>&#160;&#8212; место, где вы&#160;познакомитесь с
+                        морскими и&#160;пресноводными жителями самых разных уголков планеты. <b>В&#160;наших аквариумах воссоздана
+                            естественная среда обитания</b>, а&#160;наши экскурсоводы расскажут
+                        о&#160;жизни наших обитателей.
+                    </p>
+                </div>
+            </div>
+            <a href="#" class="inhabitants__link rose-button">
+                <div class="rose-button__content">
+                    <img loading="lazy" src="./img/acula.svg" alt="">
+                    <span>КУПИТЬ БИЛЕТ</span>
+                </div>
+            </a>
+        </div>
+        <img data-parallax-item="-10, 0.01" loading="lazy" src="./img/decor/fish-7.webp" alt=""
+            class="inhabitants__fish">
+    </section>
+
+    <section class="eat">
+        <div class="eat__bg">
+            <img loading="lazy" src="./img/eat-bg.webp" alt="">
+        </div>
+        <div class="eat__container">
+            <div class="eat__show">
+                <img loading="lazy" src="./img/acula-eat.webp" alt="">
+            </div>
+            <div class="eat__content">
+                <h2 class="eat__title">
+                    КОРМЛЕНИЕ РЫБ И&#160;ЖИВОТНЫХ
+                </h2>
+                <p class="eat__text">
+                    <b>Приходите посмотреть на&#160;кормление наших питомцев!</b> Это захватывающее зрелище, которое проходит
+                    ежедневно по&#160;расписанию. В&#160;океанариуме вы&#160;можете увидеть кормление пингвинов, тюленей и&#160;выдр. Наши
+                    сотрудники расскажут о&#160;рационе и&#160;повадках обитателей.&#160;
+                </p>
+                <div class="eat__cards">
+                    <a href="#" class="eat__card">
+                        <h4 class="eat__card-title">Кормление пингвинов</h4>
+                        <p class="eat__card-text">Смотреть расписание</p>
+                        <img src="./img/eat/1.webp" alt="" class="eat__card-image">
+                    </a>
+                    <a href="#" class="eat__card eat__card_blue">
+                        <h4 class="eat__card-title">Кормление тюленей</h4>
+                        <p class="eat__card-text">Смотреть расписание</p>
+                        <img src="./img/eat/2.webp" alt="" class="eat__card-image">
+                    </a>
+                    <a href="#" class="eat__card">
+                        <h4 class="eat__card-title">Кормление выдр</h4>
+                        <p class="eat__card-text">Смотреть расписание</p>
+                        <img src="./img/eat/3.webp" alt="" class="eat__card-image">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-parallax class="shop">
+        <div class="shop__container container">
+            <div class="shop__content">
+                <h2 class="shop__title">МАГАЗИН СУВЕНИРОВ</h2>
+                <p class="shop__text">
+                    В&#160;нашем магазине вас ждет бльшой ассортимент сувениров с&#160;символикой океанариума! Игрушки, одежда и
+                    многое другое&#160;&#8212; все, чтобы погрузиться в&#160;мир подводных чудес! Представьте, как&#160;ваши дети будут в
+                    восторге, найдя мягкую игрушку с&#160;их&#160;любимым обитателем таинственных водных глубин&#160;&#8212; это станет
+                    незабываемым подарком!
+                </p>
+                <div class="shop__time">
+                    <h4 class="shop__time-title">Часы работы</h4>
+                    <p class="shop__time-value">10:00 до&#160;19:00</p>
+                </div>
+                <p class="shop__desc">
+                    Ждем вас в&#160;гости!
+                </p>
+                <img data-parallax-item="10, 0.01" loading="lazy" src="./img/decor/fish-9.webp" alt=""
+                    class="shop__fish">
+            </div>
+            <div class="shop__image">
+                <img loading="lazy" src="./img/shop.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section data-parallax class="gallery">
+        <div class="gallery__container container">
+            <h2 class="gallery__title">
+                Окунитесь в&#160;подводный мир
+            </h2>
+            <div class="gallery__photos swiper">
+                <div class="swiper-wrapper">
+                    <div class="gallery__photo swiper-slide">
+                        <img loading="lazy" data-parallax-item="10, 0.01" src="./img/inhabitants/1.webp" alt="">
+                    </div>
+                    <div class="gallery__photo swiper-slide">
+                        <img loading="lazy" data-parallax-item="-10, 0.01" src="./img/inhabitants/2.webp" alt="">
+                    </div>
+                    <div class="gallery__photo swiper-slide">
+                        <img loading="lazy" data-parallax-item="10, 0.01" src="./img/inhabitants/3.webp" alt="">
+                    </div>
+                    <div class="gallery__photo swiper-slide">
+                        <img loading="lazy" data-parallax-item="-10, 0.01" src="./img/inhabitants/2.webp" alt="">
+                    </div>
+                    <div class="gallery__photo swiper-slide">
+                        <img loading="lazy" data-parallax-item="10, 0.01" src="./img/inhabitants/1.webp" alt="">
+                    </div>
+                </div>
+                <div class="gallery__navigation">
+                    <button class="gallery__navigation-btn gallery__navigation-btn_prev">
+                        <img loading="lazy" src="./img/icons/arrow-left.svg" alt="">
+                    </button>
+                    <button class="gallery__navigation-btn gallery__navigation-btn_next">
+                        <img loading="lazy" src="./img/icons/arrow-right.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <img loading="lazy" data-parallax-item="10, 0.01" loading="lazy" src="./img/decor/fish-8.webp" alt=""
+            class="gallery__fish">
+    </section>
+
+</main>
+
+<footer data-parallax class="footer">
+    <div class="footer__container">
+        <img loading="lazy" src="./img/logo-horizontal-dark.svg" alt="" class="footer__logo">
+        <div class="footer__content">
+            <img loading="lazy" data-parallax-item="-20, 0.01" src="./img/decor/fish-1.webp" alt="" class="footer__decor">
+            <div id="map" class="footer__map"></div>
+            <div class="footer__columns">
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Режим работы</h4>
+                    <p class="footer__column-text">Пн-Вс: 10:00&#160;&#8212; 21:00</p>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Адрес</h4>
+                    <a href="#" class="footer__column-text">г. Оренбург, Шарлыкское шоссе, &#189;</a>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__column-title">По&#160;вопросам приобретения билетов</h4>
+                    <a href="#" class="footer__column-text">+7&#160;(90)&#160;01-23-45-67</a>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Для&#160;заказа экскурсий</h4>
+                    <a href="#" class="footer__column-text">+7&#160;(90)&#160;01-23-45-67</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <a href="#" class="footer__link">Реквизиты организации</a>
+                <a href="#" class="footer__link">Пользовательское соглашение</a>
+                <a href="#" class="footer__link">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bg">
+        <img loading="lazy" src="./img/footer-bg.webp" alt="">
+    </div>
+</footer>
+
+<div class="modal modal_feed">
+    <div class="modal__container">
+        <div class="feed">
+            <div class="feed__container">
+                <h2 class="feed__title">КоРмление ПИНГВИНОВ</h2>
+                <div class="feed__content">
+                    <table class="feed__table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Понедельник</th>
+                                <td>11:00</td>
+                                <td>15:00</td>
+                                <td>19:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Вторник</th>
+                                <td>11:00</td>
+                                <td>15:00</td>
+                                <td>19:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Среда</th>
+                                <td>11:00</td>
+                                <td>15:00</td>
+                                <td>19:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Четверг</th>
+                                <td>11:00</td>
+                                <td>15:00</td>
+                                <td>19:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Пятница</th>
+                                <td>11:00</td>
+                                <td>15:00</td>
+                                <td>19:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Суббота</th>
+                                <td>11:00</td>
+                                <td>15:00</td>
+                                <td>19:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Воскресенье</th>
+                                <td>11:00</td>
+                                <td>15:00</td>
+                                <td>19:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <img loading="lazy" src="./img/feed/1.webp" alt="" class="feed__img">
+                </div>
+            </div>
+            <div data-modal-close class="feed__close">
+                <img loading="lazy" src="./img/icons/close.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<svg class="sprite" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 12 17" id="marker" xmlns="http://www.w3.org/2000/svg"><path d="M5.795 0C2.599 0 0 2.736 0 6.098c0 4.174 5.186 10.3 5.406 10.559.208.243.57.242.777 0 .22-.259 5.406-6.385 5.406-10.559C11.59 2.736 8.99 0 5.795 0Zm0 9.167c-1.608 0-2.916-1.377-2.916-3.069 0-1.691 1.308-3.068 2.916-3.068 1.607 0 2.915 1.377 2.915 3.068 0 1.692-1.308 3.069-2.915 3.069Z"/></symbol><symbol viewBox="0 0 13 15" id="phone" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.762 13.121c-.086.1-.19.226-.3.36-.276.335-.62.752-.836.92-1.135.89-2.653.465-3.726-.049-1.417-.677-2.959-1.925-4.344-3.515C2.17 9.248 1.083 7.477.493 5.853.046 4.621-.327 2.88.449 1.576c.148-.248.512-.642.804-.958.117-.127.226-.246.312-.345A.768.768 0 0 1 2.142 0c.216 0 .424.098.577.273l2.088 2.395c.152.176.238.414.238.662 0 .248-.086.486-.238.662l-.57.651a1.51 1.51 0 0 0-.353.801c-.04.304.008.614.134.885.782 1.694 1.99 3.08 3.467 3.977.235.146.506.2.77.154.265-.046.51-.188.698-.406l.567-.651a.768.768 0 0 1 .577-.274c.216 0 .424.099.577.274l2.088 2.395c.152.176.238.414.238.662 0 .248-.086.486-.238.661Z"/></symbol><symbol viewBox="0 0 15 14" id="star" xmlns="http://www.w3.org/2000/svg"><path d="m7.133 0 1.684 5.182h5.449L9.857 8.385l1.684 5.183-4.408-3.203-4.409 3.203 1.684-5.183L0 5.182h5.449L7.133 0Z"/></symbol></svg>
+<script src="js/common.js?v=1765899016193"></script>
+</body>
+</html>

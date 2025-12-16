@@ -1,0 +1,64 @@
+@use 'lib' as *;
+
+.return {
+	$self: &;
+
+	position: relative;
+	padding-bottom: fluid(70px, 50px);
+
+	&__container {
+		width: min(1478px, calc(100% - 50px * 2));
+		margin: 0 auto;
+
+		@media (max-width: 399px) {
+			width: min(1478px, calc(100% - 16px * 2));
+		}
+	}
+
+	&__title {
+		font-weight: 500;
+		text-transform: uppercase;
+		margin-bottom: fluid(35px, 30px);
+		font-size: fluid(42px, 30px);
+	}
+
+	&__desc {
+		max-width: 952px;
+		font-size: fluid(21px, 15px);
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		max-width: 952px;
+		margin-bottom: fluid(50px, 30px);
+		font-size: fluid(21px, 15px);
+	}
+
+	&__mail {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 16px;
+		font-size: fluid(21px, 15px);
+
+		img {
+			width: fluid(28px, 24px);
+		}
+	}
+
+	&__fish-1 {
+		position: absolute;
+		right: fluid(20%, 5%); top: fluid(10%, 5%);
+		width: fluid(320px, 92px);
+	}
+
+	&__fish-2 {
+		position: absolute;
+		right: 15%; top: 70%;
+		width: fluid(230px, 130px);
+	}
+
+}

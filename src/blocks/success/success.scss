@@ -1,0 +1,88 @@
+@use 'lib' as *;
+
+.success {
+	$self: &;
+
+	position: relative;
+	color: var(--white);
+
+	&__container {
+		min-height: 100svh;
+		position: relative;
+		z-index: 1;
+		width: min(1478px, calc(100% - 50px * 2));
+		margin: 0 auto;
+		padding-top: fluid(228px, 123px);
+		padding-bottom: 180px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		@media (max-width: 399px) {
+			width: min(1478px, calc(100% - 16px * 2));
+		}
+	}
+
+	&__title {
+		margin-bottom: fluid(34px, 20px);
+		font-size: fluid(54px, 30px);
+		font-weight: 500;
+		text-transform: uppercase;
+		max-width: 862px;
+	}
+
+	&__desc {
+		margin-bottom: fluid(70px, 40px);
+		font-size: fluid(24px, 18px);
+		max-width: 700px;
+	}
+
+	&__link.rose-button {
+		font-size: fluid(24px, 16px);
+		padding: fluid(20px, 16px) 0;
+		width: 100%;
+		max-width: 480px;
+
+		img {
+			width: 40px;
+		}
+	}
+
+	&__bg {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+		background: #1D4077;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(0deg, rgba(29, 64, 119, 0) 52.04%, #1D4077 100%),
+				linear-gradient(180deg, rgba(29, 64, 119, 0) 65.77%, #1D4077 100%);
+
+			@include media("<=xs") {
+				height: 50%;
+			}
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+
+			@include media("<=xs") {
+				height: 50%;
+			}
+		}
+	}
+
+}

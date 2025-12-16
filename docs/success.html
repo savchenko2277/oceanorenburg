@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css?v=1765899016193">
+    <link rel="stylesheet" href="css/swiper.css?v=1765899016193">
+    <link rel="stylesheet" href="css/flatpickr.css?v=1765899016193">
+    <title>ОРЕНБУРГСКИЙ ОКЕАНАРИУМ</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d41a53f1-28a6-4072-b94a-46f4fbb1874c&lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+		ymaps.ready(init);
+		function init() {
+			var myMap = new ymaps.Map(document.getElementById('map'), {
+				center: [55.76, 37.64],
+				zoom: 7
+			});
+		}
+	</script>
+</head>
+<body>
+
+<header class="header header_blue header_mini">
+    <div class="header__container container">
+        <div class="header__menu">
+            <ul class="header__list">
+                <li class="header__list-item"><a href="#">Главная</a></li>
+                <li class="header__list-item"><a href="#">Экспозиция</a></li>
+                <li class="header__list-item"><a href="#">Посетителям</a></li>
+                <li class="header__list-item"><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <a href="#" class="header__location">
+            <div class="header__location-top">
+                <svg>
+                    <use xlink:href="#marker"></use>
+                </svg>
+                Оренбург, Шарлыкское шоссе, &#189;
+            </div>
+            <b>Ежедневно с&#160;10 до&#160;21</b>
+        </a>
+        <a href="#" class="header__logo">
+            <img loading="lazy" src="./img/logo.svg" alt="">
+            <img loading="lazy" src="./img/logo-horizontal.svg" alt="">
+        </a>
+        <div class="header__side">
+            <a href="#" class="header__tel">
+                <svg>
+                    <use xlink:href="#phone"></use>
+                </svg>
+                +7&#160;(90)&#160;01-23-45-67
+            </a>
+            <button type="button" class="header__btn">КУПИТЬ БИЛЕТ</button>
+            <button class="header__burger">
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <section class="success">
+        <div class="success__container">
+            <h1 class="success__title">
+                Благодарим за&#160;приобретение билетОВ в&#160;океанариум
+            </h1>
+            <p class="success__desc">
+                Электронные билеты уже в&#160;пути и&#160;скоро будут отправлены на&#160;вашу почту.﻿&#160; Проверьте настройки &#171;Входящие&#187; и
+                &#171;Спам&#187;.﻿ Желаем ярких впечатлений от&#160;посещения!
+            </p>
+            <a href="#" class="success__link rose-button">
+                <div class="rose-button__content">
+                    <img loading="lazy" src="./img/acula.svg" alt="">
+                    <span>ВЕРНУТЬСЯ НА&#160;ГЛАВНУЮ</span>
+                </div>
+            </a>
+        </div>
+        <div class="success__bg">
+            <img loading="lazy" src="./img/success-bg.webp" alt="">
+        </div>
+    </section>
+</main>
+
+<svg class="sprite" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 12 17" id="marker" xmlns="http://www.w3.org/2000/svg"><path d="M5.795 0C2.599 0 0 2.736 0 6.098c0 4.174 5.186 10.3 5.406 10.559.208.243.57.242.777 0 .22-.259 5.406-6.385 5.406-10.559C11.59 2.736 8.99 0 5.795 0Zm0 9.167c-1.608 0-2.916-1.377-2.916-3.069 0-1.691 1.308-3.068 2.916-3.068 1.607 0 2.915 1.377 2.915 3.068 0 1.692-1.308 3.069-2.915 3.069Z"/></symbol><symbol viewBox="0 0 13 15" id="phone" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.762 13.121c-.086.1-.19.226-.3.36-.276.335-.62.752-.836.92-1.135.89-2.653.465-3.726-.049-1.417-.677-2.959-1.925-4.344-3.515C2.17 9.248 1.083 7.477.493 5.853.046 4.621-.327 2.88.449 1.576c.148-.248.512-.642.804-.958.117-.127.226-.246.312-.345A.768.768 0 0 1 2.142 0c.216 0 .424.098.577.273l2.088 2.395c.152.176.238.414.238.662 0 .248-.086.486-.238.662l-.57.651a1.51 1.51 0 0 0-.353.801c-.04.304.008.614.134.885.782 1.694 1.99 3.08 3.467 3.977.235.146.506.2.77.154.265-.046.51-.188.698-.406l.567-.651a.768.768 0 0 1 .577-.274c.216 0 .424.099.577.274l2.088 2.395c.152.176.238.414.238.662 0 .248-.086.486-.238.661Z"/></symbol><symbol viewBox="0 0 15 14" id="star" xmlns="http://www.w3.org/2000/svg"><path d="m7.133 0 1.684 5.182h5.449L9.857 8.385l1.684 5.183-4.408-3.203-4.409 3.203 1.684-5.183L0 5.182h5.449L7.133 0Z"/></symbol></svg>
+<script src="js/common.js?v=1765899016193"></script>
+</body>
+
+</html>

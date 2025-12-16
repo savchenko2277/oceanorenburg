@@ -1,0 +1,66 @@
+@@include("_head.html", {"id":"home"})
+
+<header class="header header_blue header_mini">
+    <div class="header__container container">
+        <div class="header__menu">
+            <ul class="header__list">
+                <li class="header__list-item"><a href="#">Главная</a></li>
+                <li class="header__list-item"><a href="#">Экспозиция</a></li>
+                <li class="header__list-item"><a href="#">Посетителям</a></li>
+                <li class="header__list-item"><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <a href="#" class="header__location">
+            <div class="header__location-top">
+                <svg>
+                    <use xlink:href="#marker"></use>
+                </svg>
+                Оренбург, Шарлыкское шоссе, 1/2
+            </div>
+            <b>Ежедневно с 10 до 21</b>
+        </a>
+        <a href="#" class="header__logo">
+            <img loading="lazy" src="./img/logo.svg" alt="">
+            <img loading="lazy" src="./img/logo-horizontal.svg" alt="">
+        </a>
+        <div class="header__side">
+            <a href="#" class="header__tel">
+                <svg>
+                    <use xlink:href="#phone"></use>
+                </svg>
+                +7 900 123 45 67
+            </a>
+            <button type="button" class="header__btn">КУПИТЬ БИЛЕТ</button>
+            <button class="header__burger">
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <section class="error">
+        <div class="error__container">
+            <h2 class="error__subtitle">ОШИБКА 404</h2>
+            <h1 class="error__title">ЭТОЙ СТРАНИЦЫ НЕ СУЩЕСТВУЕТ</h1>
+            <p class="error__desc">
+                Чтобы не потеряться, вернитесь на главную страницу.
+            </p>
+            <a href="index.html" class="error__link rose-button">
+                <div class="rose-button__content">
+                    <img loading="lazy" src="./img/acula.svg" alt="">
+                    <span>ВЕРНУТЬСЯ НА ГЛАВНУЮ</span>
+                </div>
+            </a>
+        </div>
+        <div class="error__bg">
+            <img loading="lazy" src="./img/error-bg.webp" alt="">
+        </div>
+    </section>
+</main>
+
+@@include("_sprite.svg")
+<script src="js/common.js?v=0"></script>
+</body>
+
+</html>

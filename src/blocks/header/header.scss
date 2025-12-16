@@ -10,7 +10,84 @@
 	z-index: 10;
 	color: var(--white);
 
+	&_mini {
+		#{$self}__logo {
+			@include media(">lg") {
+				width: 144px;
+			}
+		}
+
+		#{$self}__menu {
+			@include media(">lg") {
+				display: none;
+			}
+		}
+
+		#{$self}__container {
+
+			@include media(">lg") {
+				align-items: start;
+				padding-top: 40px;
+
+				&::after {
+					display: none;
+				}
+			}
+		}
+	}
+
+	&_blue {
+		#{$self}__logo {
+			@include media("<=lg") {
+				img {
+					&:first-child {
+						display: none;
+					}
+
+					&:nth-child(2) {
+						display: block;
+						height: 40px;
+					}
+				}
+			}
+		}
+
+		#{$self}__btn {
+			@include media("<=lg") {
+				display: none;
+			}
+		}
+
+		#{$self}__container {
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				height: 100%;
+				width: calc(100% + 44px * 2);
+				border-radius: 50px;
+				background: #1B3F77;
+				z-index: -1;
+
+				@include media("<=lg") {
+					width: calc(100% + 16px * 2);
+				}
+			}
+
+			@include media("<=lg") {
+				padding: 10px 0px;
+			}
+		}
+
+		@include media("<=lg") {
+			top: 5px;
+		}
+	}
+
 	&__container {
+		position: relative;
 		width: min(1478px, calc(100% - 50px * 2));
 		margin: 0 auto;
 		display: flex;
@@ -20,7 +97,7 @@
 		gap: 47px;
 		padding: 15px 0px;
 
-		@media (max-width: 400px) {
+		@media (max-width: 399px) {
 			width: min(1478px, calc(100% - 16px * 2));
 		}
 	}
@@ -68,7 +145,13 @@
 		}
 	}
 
-	&__list-item {}
+	&__list-item {
+		transition: all var(--trans);
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
 
 	&__logo {
 		width: fluid(84px, 70px);
@@ -78,6 +161,10 @@
 			width: 100%;
 			height: auto;
 			object-fit: contain;
+
+			&:not(:first-child) {
+				display: none;
+			}
 		}
 	}
 
@@ -110,6 +197,12 @@
 		@include media("<=lg") {
 			display: none;
 		}
+
+		transition: all var(--trans);
+
+		&:hover {
+			opacity: 0.7;
+		}
 	}
 
 	&__location {
@@ -124,6 +217,12 @@
 
 		@include media("<=lg") {
 			display: none;
+		}
+
+		transition: all var(--trans);
+
+		&:hover {
+			opacity: 0.7;
 		}
 	}
 
@@ -151,6 +250,12 @@
 		padding: 12px 20px;
 		border-radius: 20px;
 		font-size: 14px;
+		transition: all var(--trans);
+
+		&:hover {
+			background: var(--light);
+			color: var(--white);
+		}
 	}
 
 	&__burger {
@@ -166,12 +271,14 @@
 		&.active {
 			span {
 				background: transparent;
+
 				&::before {
 					transform: rotate(45deg) translateX(50%) translateY(-14px);
 					top: 50%;
 					right: 50%;
 					width: 100%;
 				}
+
 				&::after {
 					transform: rotate(-45deg) translateX(50%) translateY(14px);
 					right: 50%;
