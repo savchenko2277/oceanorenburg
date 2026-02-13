@@ -83,7 +83,7 @@
 		align-items: center;
 		gap: 10px;
 		font-weight: 700;
-		font-size: fluid(48px, 30px);
+		font-size: fluid(48px, 24px);
 		margin-bottom: 30px;
 		position: relative;
 		z-index: 1;
@@ -120,7 +120,7 @@
 			right: -10%;
 		}
 
-		@include media("<=md") {
+		@include media("<=xs") {
 			left: 20px;
 			right: auto;
 			width: auto;
