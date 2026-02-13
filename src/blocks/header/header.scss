@@ -251,10 +251,12 @@
 		border-radius: 20px;
 		font-size: 14px;
 		transition: all var(--trans);
+		background: var(--light);
+		color: var(--white);
 
 		&:hover {
-			background: var(--light);
-			color: var(--white);
+			background: transparent;
+			color: var(--light);
 		}
 	}
 

@@ -8,9 +8,9 @@
 	width: 100%;
 	margin-bottom: fluid(90px, 70px);
 
-	@include media("<=xlg") {
+	@include media("<=md") {
 		grid-template-columns: 100%;
-		max-width: 300px;
+		max-width: 640px;
 		align-self: center;
 	}
 
@@ -21,15 +21,15 @@
 		height: 100%;
 		position: relative;
 
-		@include media("<=xlg") {
+		@include media("<=md") {
 			height: 75px;
 			aspect-ratio: inherit;
-			background: url("../img/ticket-side-2.svg") no-repeat center / cover;
+			background: url("../img/ticket-side-2.svg") no-repeat top / cover;
 		}
 	}
 
 	&__logo {
-		@include media("<=xlg") {
+		@include media("<=md") {
 			position: absolute;
 			top: 50%; left: 50%;
 			transform: translate(-50%, -50%) rotate(90deg);
@@ -45,7 +45,11 @@
 		color: #fff;
 		padding-bottom: 45px;
 
-		@include media("<=xlg") {
+		@include media("<=xxlg") {
+			padding: 48px 24px;
+		}
+
+		@include media("<=md") {
 			background: url("../img/ticket-main-2.webp") no-repeat bottom / cover;
 			background-position: bottom center;
 			background-size: 100% 100%;
@@ -60,22 +64,27 @@
 		align-items: center;
 		justify-content: space-between;
 		margin-bottom: fluid(32px, 25px);
+		gap: 16px;
 	}
 
 	&__title {
 		text-transform: uppercase;
 		font-weight: 500;
 		font-size: fluid(42px, 30px);
+
+		@include media("<=xxlg") {
+			font-size: 28px;
+		}
 	}
 
 	&__link_pc {
-		@include media("<=xlg") {
+		@include media("<=md") {
 			display: none !important;
 		}
 	}
 
 	&__link_mobile {
-		@include media(">xlg") {
+		@include media(">md") {
 			display: none !important;
 		}
 	}
@@ -95,6 +104,11 @@
 		max-width: 640px;
 		font-size: fluid(21px, 15px);
 		margin-bottom: fluid(80px, 45px);
+
+		@include media("<=xxlg") {
+			font-size: 16px;
+			margin-bottom: 45px;
+		}
 	}
 
 	&__prices {
@@ -102,7 +116,7 @@
 		grid-template-columns: repeat(2, 1fr);
 		gap: 20px;
 
-		@include media("<=xlg") {
+		@include media("<=md") {
 			grid-template-columns: 100%;
 			gap: 45px;
 			margin-bottom: 45px;
@@ -121,7 +135,11 @@
 		font-weight: 700;
 		font-size: fluid(42px, 24px);
 
-		@include media("<=xlg") {
+		@include media("<=xxlg") {
+			font-size: 24px;
+		}
+
+		@include media("<=md") {
 			font-size: 24px;
 			margin-bottom: 20px;
 			display: block;
@@ -143,10 +161,10 @@
 		height: 100%;
 		position: relative;
 
-		@include media("<=xlg") {
+		@include media("<=md") {
 			height: 221px;
 			aspect-ratio: inherit;
-			background: url("../img/ticket-code-2.svg") no-repeat center / cover;
+			background: url("../img/ticket-code-2.svg") no-repeat bottom / cover;
 			flex-direction: column;
 		}
 	}
@@ -159,7 +177,7 @@
 		writing-mode: vertical-lr;
 		transform: rotate(180deg);
 
-		@include media("<=xlg") {
+		@include media("<=md") {
 			writing-mode: unset;
 			transform: none;
 			top: 40px; left: 50%;
@@ -184,6 +202,10 @@
 		position: absolute;
 		right: 60px;
 		font-size: fluid(30px, 21px);
+
+		@include media("<=xxlg") {
+			font-size: 21px;
+		}
 
 		@include media("<=xlg") {
 			writing-mode: unset;

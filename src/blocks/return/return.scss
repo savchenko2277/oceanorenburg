@@ -53,12 +53,24 @@
 		position: absolute;
 		right: fluid(20%, 5%); top: fluid(10%, 5%);
 		width: fluid(320px, 92px);
+
+		@include media("<=xxlg") {
+			right: 5%;
+			width: 92px;
+			top: 0%;
+		}
 	}
 
 	&__fish-2 {
 		position: absolute;
 		right: 15%; top: 70%;
 		width: fluid(230px, 130px);
+
+		@include media("<=xxlg") {
+			right: 5%;
+			width: 130px;
+			top: 90%;
+		}
 	}
 
 }

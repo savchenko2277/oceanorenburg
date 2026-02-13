@@ -4,6 +4,7 @@
 	$self: &;
 
 	padding-top: fluid(70px, 35px);
+	overflow: hidden;
 
 	&__container {
 		width: min(1478px, calc(100% - 50px * 2));
@@ -113,8 +114,18 @@
 	&__item-image {
 		position: absolute;
 		right: 20px; bottom: 0;
-		width: fluid(249px, 191px);
-		right: auto; left: 10px;
+		width: 30%;
+
+		@include media("<=xlg") {
+			right: -10%;
+		}
+
+		@include media("<=md") {
+			left: 20px;
+			right: auto;
+			width: auto;
+			height: 70%;
+		}
 	}
 
 }

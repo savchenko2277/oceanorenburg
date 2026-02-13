@@ -93,6 +93,10 @@
 		top: -5%;
 		z-index: 0;
 
+		@include media("<=xxlg") {
+			width: 200px;
+		}
+
 		@include media("<=lg") {
 			top: -7%;
 		}
