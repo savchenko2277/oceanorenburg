@@ -6,7 +6,6 @@
 	display: grid;
 	grid-template-columns: minmax(113.8369140625px, auto) 1fr minmax(334.3974609375px, auto);
 	width: 100%;
-	margin-bottom: fluid(90px, 70px);
 
 	@include media("<=md") {
 		grid-template-columns: 100%;
