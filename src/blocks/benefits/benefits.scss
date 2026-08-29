@@ -1,0 +1,42 @@
+@use 'lib' as *;
+
+.benefits {
+	$self: &;
+
+	padding: 48px 0px;
+	overflow: hidden;
+
+	&__container {
+		width: min(1483px, calc(100% - 50px * 2));
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+
+		@media (max-width: 399px) {
+			width: min(1478px, calc(100% - 16px * 2));
+		}
+	}
+
+	&__info {
+		max-width: 708px;
+		margin-bottom: fluid(48px, 36px);
+	}
+
+	&__title {
+		font-size: fluid(42px, 24px);
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: fluid(16px, 10px);
+	}
+
+	&__desc {
+		font-size: fluid(24px, 15px);
+	}
+
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 16px;
+	}
+
+}

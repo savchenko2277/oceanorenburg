@@ -7,14 +7,29 @@
 		position: relative;
 	}
 
+	&_bilets {
+		position: relative;
+
+		#{$self}__bg {
+
+			img {
+				bottom: 10% !important;
+				left: 0 !important;
+				top: auto !important;
+			}
+		}
+	}
+
 	&_info {
 		position: relative;
 
 		#{$self}__bg {
 			height: 80%;
+
 			img:first-child {
 				height: 100%;
 			}
+
 			&::after {
 				background: linear-gradient(0deg, rgba(230, 247, 250, 0) 83.07%, #E6F7FA 100%),
 					linear-gradient(180deg, rgba(230, 247, 250, 0) 84.4%, #E6F7FA 100%);

@@ -1,0 +1,213 @@
+@use 'lib' as *;
+
+.bilets {
+	$self: &;
+
+	padding-bottom: 48px;
+
+	&__container {
+		width: min(1483px, calc(100% - 50px * 2));
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+
+		@media (max-width: 399px) {
+			width: min(1478px, calc(100% - 16px * 2));
+		}
+	}
+
+	&__link {
+		align-self: center;
+	}
+
+	&__table {
+		overflow: hidden;
+		border-radius: 16px;
+		background: #FFFFFF;
+		margin-bottom: 48px;
+	}
+
+	&__table-head {
+		background: #98D8E5;
+
+		@include media("<=sm") {
+			gap: 0 !important;
+		}
+	}
+
+	&__table-row {
+		display: grid;
+		grid-template-columns: 47% 23% 30%;
+		border-bottom: 2px solid #5981B3;
+
+		@include media("<=sm") {
+			grid-template-columns: repeat(2, 1fr);
+			padding: 28px 16px ;
+			gap: 28px;
+		}
+	}
+
+	&__table-head-column {
+		&:nth-child(1) {
+			padding: fluid(57px, 24px) fluid(57px, 24px) fluid(44px, 24px) fluid(57px, 24px);
+
+			@include media("<=sm") {
+				grid-column: span 2;
+			}
+		}
+
+		&:nth-child(2),
+		&:nth-child(3) {
+			@include flex-center;
+		}
+
+		&:not(:last-child) {
+			border-right: 2px solid #5981B3;
+
+			@include media("<=sm") {
+				border-right: none;
+			}
+		}
+
+		@include media("<=sm") {
+			#{$self}__date {
+				display: none;
+			}
+		}
+	}
+
+	&__title {
+		font-size: fluid(48px, 30px);
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	&__date {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: fluid(30px, 12px);
+
+		&::before {
+			content: '';
+			display: block;
+			width: fluid(61px, 30px);
+			height: fluid(61px, 30px);
+			background-size: contain;
+		}
+
+		&_first::before {
+			background: url("../img/icons/calendar.svg");
+			background-size: contain;
+		}
+
+		&_second::before {
+			background: url("../img/icons/calendar-second.svg");
+			background-size: contain;
+		}
+
+		@include media("<=sm") {
+			margin-bottom: 16px;
+		}
+	}
+
+	&__date-info {
+		h4 {
+			font-size: fluid(28px, 18px);
+			font-weight: 600;
+		}
+
+		p {
+			font-size: fluid(18px, 13px);
+		}
+	}
+
+	&__table-row-column {
+		@include flex-center;
+		padding: fluid(48px, 21px) fluid(48px, 16px);
+
+		&:first-child {
+			justify-content: start;
+
+			@include media("<=sm") {
+				grid-column: span 2;
+			}
+		}
+
+		#{$self}__date {
+			display: none;
+
+			@include media("<=sm") {
+				display: flex;
+			}
+
+		}
+
+		&:not(:last-child) {
+			border-right: 2px solid #5981B3;
+			
+			@include media("<=sm") {
+				border-right: none;
+			}
+		}
+
+
+		@include media("<=sm") {
+			justify-content: start;
+			flex-direction: column;
+			align-items: start;
+			padding: 0;
+		}
+
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: fluid(44px, 14px);
+
+
+	}
+
+	&__item-icon {
+		width: fluid(170px, 70px);
+		aspect-ratio: 1 / 1;
+		object-fit: contain;
+	}
+
+	&__item-info {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+
+		h4 {
+			font-size: fluid(28px, 21px);
+			font-weight: 700;
+		}
+
+		p {
+			font-size: fluid(18px, 13px);
+		}
+	}
+
+	&__table-price {
+		font-weight: 700;
+		font-size: fluid(48px, 36px);
+	}
+
+	&__table-info {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 28px;
+		padding: 16px 24px;
+		font-size: fluid(24px, 15px);
+
+		b {
+			font-size: 45px;
+			font-weight: 600;
+		}
+	}
+
+}
