@@ -3,11 +3,11 @@
 .rose-button {
 	$self: &;
 
-	padding: 26px;
-	border-radius: 40px;
+	padding: fluid(26px, 16px);
+	border-radius: fluid(40px, 20px);
 	background: var(--rose);
 	color: var(--white);
-	font-size: 21px;
+	font-size: fluid(21px, 14px);
 	font-weight: 700;
 	display: flex;
 	flex-direction: row;
@@ -28,7 +28,7 @@
 		transition: all var(--trans);
 
 		img {
-			width: 60px;
+			width: fluid(60px, 40px);
 			object-fit: contain;
 		}
 

@@ -1,0 +1,258 @@
+@use 'lib' as *;
+
+.excursions-promo {
+	$self: &;
+
+	position: relative;
+	background: #F8F9FB;
+	padding-bottom: fluid(48px, 36px);
+	overflow: hidden;
+
+	&_groups {
+		#{$self}__image {
+			width: fluid(820px, 60px);
+
+			@include media("<=lg") {
+				width: calc(100% + 48px);
+			}
+		}
+	}
+
+	&__container {
+		width: min(1485px, calc(100% - 24px * 2));
+		margin: 0 auto;
+	}
+
+	&__fish {
+		position: absolute;
+
+		&-first {
+			top: 160px;
+			left: 490px;
+			width: fluid(225px, 100px);
+			object-fit: contain;
+
+			@include media("<=lg") {
+				display: none;
+			}
+		}
+
+		&-second {
+			left: 120px;
+			top: -100px;
+			width: 104px;
+
+			@include media("<=lg") {
+				display: none;
+			}
+		}
+
+		&-third {
+			right: fluid(246px, 229px);
+			bottom: fluid(168px, 100px);
+			width: fluid(169px, 114px);
+		}
+	}
+
+	&__top {
+		padding-top: 160px;
+		padding-bottom: 215px;
+		position: relative;
+		z-index: 2;
+
+		@include media("<=lg") {
+			padding-top: 80px;
+			padding-bottom: 0px;
+			margin-bottom: 36px;
+		}
+	}
+
+	&__top-info {
+		max-width: 521px;
+	}
+
+	&__title {
+		font-size: fluid(70px, 30px);
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	&__sub-title {
+		font-size: fluid(42px, 21px);
+		font-weight: 700;
+		color: #5981B3;
+		text-transform: uppercase;
+		margin-bottom: 48px;
+		padding-bottom: 36px;
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 60px;
+			height: 2px;
+			background: #AEDFE6;
+		}
+
+		@include media("<=xs") {
+			padding-bottom: 0;
+			margin-bottom: 32px;
+
+			&::after {
+				display: none;
+			}
+		}
+	}
+
+	&__text {
+		font-size: fluid(24px, 15px);
+		font-weight: 300;
+	}
+
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 44px;
+		margin-bottom: 48px;
+		position: relative;
+		z-index: 2;
+
+		@include media("<=lg") {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 20px;
+		}
+	}
+
+	&__item {
+		@include media(">lg") {
+			&:not(:last-child) {
+				padding-right: fluid(44px, 20px);
+				border-right: 2px solid #AEDFE6;
+			}
+		}
+
+		@include media("<=lg") {
+
+			// Учитывает только элементы, совпадающие с текщим селектором (&)
+			&:nth-child(1 of &),
+			&:nth-child(3 of &) {
+				padding-right: fluid(44px, 20px);
+				border-right: 2px solid #AEDFE6;
+			}
+		}
+	}
+
+	&__item-icon {
+		height: fluid(65px, 40px);
+		height: fluid(65px, 40px);
+		object-fit: cover;
+		margin-bottom: 16px;
+	}
+
+	&__item-text {
+		font-size: fluid(24px, 15px);
+		font-weight: 300;
+	}
+
+	&__image {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: fluid(947px, 60px);
+		height: auto;
+		object-fit: contain;
+
+		@include media("<=lg") {
+			position: static;
+			width: calc(100% + 48px);
+			transform: translateX(-24px);
+			max-width: none;
+
+		}
+	}
+
+	&__about {
+		padding: 48px;
+		background: #DDEFFB;
+		border-radius: 20px;
+		display: grid;
+		grid-template-columns: fluid(100px, 44px) 1fr;
+		gap: fluid(24px, 16px) fluid(44px, 16px);
+		position: relative;
+		margin-bottom: 24px;
+
+		@include media("<=lg") {
+			padding: 48px 24px;
+			padding-bottom: 210px;
+			width: calc(100% + 48px);
+			transform: translateX(-24px);
+		}
+	}
+
+	&__about-icon {
+		grid-row: span 3;
+		width: fluid(100px, 44px);
+		height: fluid(100px, 44px);
+
+		@include media("<=lg") {
+			grid-row: span 1;
+		}
+	}
+
+	&__about-title {
+		font-size: fluid(36px, 21px);
+		font-weight: 700;
+
+		@include media("<=lg") {
+			padding-top: 12px;
+		}
+	}
+
+	&__about-text {
+		@include media(">lg") {
+			grid-column: 2 / auto;
+		}
+
+		max-width: 924px;
+		font-size: fluid(24px, 15px);
+		font-weight: 300;
+
+		@include media("<=lg") {
+			grid-column: 1 / span 2;
+		}
+	}
+
+	&__about-image {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+
+		@include media("<=lg") {
+			width: 256px;
+			object-fit: contain;
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 20px;
+		font-size: fluid(24px, 15px);
+		font-weight: 300;
+
+		@include media("<=lg") {
+			flex-direction: column;
+			align-items: start;
+		}
+	}
+
+	&__info-icon {
+		width: fluid(50px, 40px);
+		height: fluid(50px, 40px);
+		object-fit: contain;
+	}
+
+}
